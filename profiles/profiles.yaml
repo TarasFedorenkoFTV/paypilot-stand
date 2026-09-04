@@ -1,0 +1,19 @@
+# Lesson profiles, student build.
+# A profile is the set of defects a lesson runs with.
+
+profiles:
+  clean: []
+  lesson-01: [D01, D02, D03]
+  lesson-02: [D04, D05, D16, D19, D20, D25]
+  lesson-03: [D19, D20, D21, D22, D26]
+  lesson-04: [D16, D17, D05]
+  lesson-05: [D06, D07]
+  lesson-06: [D08, D09, D10, D23, D24]
+  lesson-07: [D11, D12, D13]
+  lesson-08: [D14, D15]
+  lesson-09: [D18, D25, D27]
+  lesson-10: []
+  lesson-11: []
+  lesson-12: []
+  lesson-13: []
+  lesson-14: []
