@@ -1,0 +1,39 @@
+services:
+  stand:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      - PROFILE=${PROFILE:-clean}
+      - DEFECTS=${DEFECTS:-}
+      - CLOCK_OVERRIDE=${CLOCK_OVERRIDE:-2026-09-15T10:00:00Z}
+      - LLM_PROVIDER=${LLM_PROVIDER:-mock}
+      - LLM_MODEL=${LLM_MODEL:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      # loop knobs: without these the container ignored .env and the
+      # memory lesson was unreachable inside compose
+      - MAX_AGENT_STEPS=${MAX_AGENT_STEPS:-12}
+      - SUMMARIZE_AFTER_STEPS=${SUMMARIZE_AFTER_STEPS:-8}
+      - KB_INDEX=${KB_INDEX:-}
+      - RAG_TOP_K=${RAG_TOP_K:-4}
+      # traces are mirrored to Phoenix; the stand works without it too
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://phoenix:6006
+      - OTEL_SERVICE_NAME=paypilot-stand
+    volumes:
+      - stand-data:/stand/data
+      - stand-traces:/stand/traces
+    depends_on: [phoenix]
+
+  # Arize Phoenix — the trace UI the course reads (documented port 6006)
+  phoenix:
+    image: arizephoenix/phoenix:latest
+    ports: ["6006:6006"]
+    environment:
+      - PHOENIX_WORKING_DIR=/phoenix-data
+    volumes:
+      - phoenix-data:/phoenix-data
+
+volumes:
+  stand-data:
+  stand-traces:
+  phoenix-data:

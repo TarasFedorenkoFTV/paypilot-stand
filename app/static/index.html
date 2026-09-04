@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PayPilot — навчальний стенд</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --line:#2a2f3a;
+    --text:#e6e8ec; --muted:#9aa3b2; --accent:#4f9cf9; --warn:#f2b45c;
+    --bad:#e5646d; --good:#5ec38a; --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;height:100vh;display:flex;background:var(--bg);color:var(--text);
+       font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  .chat{flex:1;display:flex;flex-direction:column;min-width:0}
+  .chat-head{padding:12px 18px;border-bottom:1px solid var(--line);
+             display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .chat-head h1{font-size:15px;margin:0;font-weight:600}
+  .pill{font:11px var(--mono);padding:3px 8px;border-radius:99px;
+        background:var(--panel2);border:1px solid var(--line);color:var(--muted)}
+  .pill.on{color:var(--warn);border-color:#4a3a1e}
+  .pill.clean{color:var(--good);border-color:#1e4a33}
+  .msgs{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:14px}
+  /* 760px is wider than a 768px screen: the bubble forced the whole page
+     to scroll sideways on a tablet. */
+  .msg{max-width:min(760px, 100%);padding:10px 14px;border-radius:10px;
+       white-space:pre-wrap;
+       word-wrap:break-word}
+  .msg code{font:12px var(--mono);background:#0f1622;padding:1px 4px;
+            border-radius:4px}
+  .msg.user{align-self:flex-end;background:#24405f}
+  .msg.bot{align-self:flex-start;background:var(--panel);border:1px solid var(--line)}
+  .msg.sys{align-self:center;color:var(--muted);font-size:12px;background:none;
+           border:1px dashed var(--line)}
+  .msg.err{align-self:center;font-size:12px;background:#3a1d1d;color:#ffb4b4;
+           border:1px solid #7a3a3a}
+  .meta{margin-top:6px;font:11px var(--mono);color:var(--muted);display:flex;
+        gap:10px;flex-wrap:wrap}
+  .meta a{color:var(--accent);cursor:pointer;text-decoration:none}
+  .composer{display:flex;gap:8px;padding:14px 18px;border-top:1px solid var(--line);
+            flex-wrap:wrap}
+  .composer input{flex:1;min-width:180px;background:var(--panel);
+                  border:1px solid var(--line);
+                  color:var(--text);padding:10px 12px;border-radius:8px;font:inherit}
+  .composer input:focus{outline:none;border-color:var(--accent)}
+  button{background:var(--panel2);color:var(--text);border:1px solid var(--line);
+         padding:8px 12px;border-radius:8px;cursor:pointer;font:inherit}
+  button:hover{border-color:var(--accent)}
+  button.primary{background:var(--accent);color:#08111e;border-color:var(--accent);
+                 font-weight:600}
+  button:disabled{opacity:.5;cursor:default}
+  .side{width:400px;border-left:1px solid var(--line);background:var(--panel);
+        overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:18px}
+  .side h2{font-size:12px;text-transform:uppercase;letter-spacing:.08em;
+           color:var(--muted);margin:0 0 8px}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  select,input[type=text]{background:var(--panel2);border:1px solid var(--line);
+    color:var(--text);padding:7px 9px;border-radius:7px;font:inherit;flex:1;min-width:0}
+  .defects{display:flex;flex-wrap:wrap;gap:6px}
+  .dchip{font:11px var(--mono);padding:4px 7px;border-radius:6px;cursor:pointer;
+         background:var(--panel2);border:1px solid var(--line);color:var(--muted)}
+  .dchip.active{background:#3a2c14;border-color:var(--warn);color:var(--warn)}
+  .dchip.profile{background:#2a1f38;border-color:#6b4ba8;color:#c4a5f0;cursor:default}
+  .tree{font:12px var(--mono);white-space:pre;overflow-x:auto;color:var(--muted)}
+  #promptBox{max-height:260px;overflow:auto;background:var(--panel2);
+             border:1px solid var(--line);border-radius:8px;padding:10px;
+             font:11px var(--mono);white-space:pre-wrap;margin-top:8px}
+  .tree .sp{cursor:pointer;color:var(--text)}
+  .tree .sp:hover{color:var(--accent)}
+  .tree .tool{color:var(--warn)} .tree .llm{color:var(--accent)}
+  .attrs{background:var(--panel2);border:1px solid var(--line);border-radius:8px;
+         padding:10px;font:11px var(--mono);white-space:pre-wrap;word-break:break-word;
+         max-height:280px;overflow-y:auto;color:var(--muted)}
+  .hint{font-size:12px;color:var(--muted)}
+  .seed{font:11px var(--mono);color:var(--muted);line-height:1.7}
+  .seed b{color:var(--text);font-weight:600}
+  .err{color:var(--bad)}
+  .pdiff{grid-column:1/-1;margin-top:10px;padding:8px 10px;border-radius:8px;
+         background:#2a1f14;border:1px solid #6a5228;color:#f5d9a8;
+         font:11px var(--mono);white-space:pre-wrap;word-break:break-word}
+  .pdiff strong{display:block;margin-bottom:4px;color:var(--warn)}
+  .cmp{align-self:stretch;max-width:none;display:grid;grid-template-columns:1fr 1fr;
+       gap:12px;background:none;border:none;padding:0}
+  .cmp .col{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+            padding:12px;white-space:pre-wrap}
+  .cmp .col.dirty{border-color:#4a3a1e}
+  .cmp h3{margin:0 0 8px;font:11px var(--mono);letter-spacing:.05em;color:var(--muted)}
+  .cmp .col.dirty h3{color:var(--warn)}
+  code{font:11px var(--mono);background:var(--panel2);padding:1px 5px;border-radius:4px}
+
+  /* narrow screens: these must sit after the base rules above */
+  @media (max-width: 1100px){ .side{width:340px} }
+  @media (max-width: 820px){
+    body{flex-direction:column;height:auto;min-height:100vh}
+    .chat{min-height:60vh}
+    .side{width:auto;border-left:none;border-top:1px solid var(--line)}
+    .cmp{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="chat">
+  <div class="chat-head">
+    <h1>PayPilot</h1>
+    <span class="pill" id="pProfile">—</span>
+    <span class="pill" id="pDefects">—</span>
+    <span class="pill" id="pClock">—</span>
+    <span class="pill" id="pKnobs" style="display:none"></span>
+    <span class="pill" id="pProvider">—</span>
+    <span style="flex:1"></span>
+    <button onclick="newSession()">Нова сесія</button>
+  </div>
+  <div class="msgs" id="msgs"></div>
+  <div class="composer">
+    <input id="inp" placeholder="Напишіть повідомлення…"
+           onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();send()}">
+    <button class="primary" id="sendBtn" onclick="send()">Надіслати</button>
+    <button id="cmpBtn" onclick="compare()" title="Той самий запит на clean і на профілі">clean vs профіль</button>
+  </div>
+</div>
+
+<div class="side">
+  <div>
+    <h2>Профіль заняття</h2>
+    <div class="row">
+      <select id="profileSel" onchange="setProfile()"></select>
+      <button onclick="resetState()">Скинути стан</button>
+    </div>
+  </div>
+
+  <div>
+    <h2>Дефекти <span class="hint" id="dCount"></span></h2>
+    <div class="defects" id="defects"></div>
+    <div class="hint" style="margin-top:8px">
+      Фіолетові — з профілю. Клік по решті вмикає точково (<code>DEFECTS=</code>).
+    </div>
+  </div>
+
+  <div>
+    <h2>Час прогону</h2>
+    <div class="row">
+      <input type="text" id="clockInp" placeholder="2026-09-15T10:00:00Z">
+      <button onclick="setClock(false)">Задати</button>
+      <button onclick="setClock(true)">Скинути</button>
+    </div>
+    <div class="hint" style="margin-top:6px">
+      Вікна оскарження рахуються від цієї дати.
+    </div>
+  </div>
+
+  <div>
+    <h2>Пам'ять і пошук</h2>
+    <div class="row">
+      <span class="hint" style="min-width:96px">згортка після</span>
+      <input type="text" id="sumInp" style="max-width:60px" placeholder="8">
+      <button onclick="setSummarize()">Задати</button>
+    </div>
+    <div class="row" style="margin-top:6px">
+      <span class="hint" style="min-width:96px">пошук top_k</span>
+      <input type="text" id="topkInp" style="max-width:60px" placeholder="4">
+      <select id="idxSel">
+        <option value="">індекс за профілем</option>
+        <option value="kb_clean">kb_clean</option>
+        <option value="kb_broken">kb_broken</option>
+      </select>
+      <button onclick="setRetrieval()">Задати</button>
+    </div>
+    <div class="hint" style="margin-top:6px">
+      Заняття про пам'ять вимагає знизити згортку до 2 — інакше діалог не
+      дійде до неї й дефект не проявиться.
+    </div>
+  </div>
+
+  <div>
+    <h2>Системний промпт</h2>
+    <div class="row">
+      <button onclick="togglePrompt()">Показати / сховати</button>
+      <span class="hint" id="promptMeta"></span>
+    </div>
+    <pre id="promptBox" style="display:none"></pre>
+  </div>
+
+  <div>
+    <h2>Трейс останнього ходу</h2>
+    <div class="tree" id="tree">— зробіть запит —</div>
+    <div class="attrs" id="attrs" style="margin-top:8px;display:none"></div>
+  </div>
+
+  <div>
+    <h2>Seed-дані</h2>
+    <div class="seed" id="seed">завантаження…</div>
+  </div>
+</div>
+
+<script>
+const $ = function(id){ return document.getElementById(id); };
+let sessionId = null, lastTrace = null;
+let extraDefects = new Set(), profileDefects = new Set();
+
+let ALL_IDS = [];   // filled from /api/_test/defects
+
+async function api(path, opts){
+  const r = await fetch(path, opts);
+  if(!r.ok){
+    // FastAPI answers {"detail": "..."}; showing the raw body put JSON in
+    // front of a lecturer mid-lesson
+    const body = await r.text();
+    let msg = body.slice(0,300);
+    try{ const j = JSON.parse(body); if(j && j.detail) msg = j.detail; }catch(_){}
+    throw new Error(msg);
+  }
+  return r.json();
+}
+
+// Errors belong in the conversation, not in a modal dialog: alert() blocks the
+// page, cannot be read back, and was showing the raw response body.
+function fail(e){ addMsg('Не вдалося: ' + e.message, 'err'); }
+
+function jpost(body){
+  return {method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify(body)};
+}
+function jput(body){
+  return {method:'PUT', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify(body)};
+}
+
+// The model answers in markdown, and the page was showing the asterisks. On a
+// projector that buries the numbers, which are the whole point of the reply.
+//
+// Built as DOM nodes, never innerHTML: this stand deliberately carries prompt
+// injection payloads, so parsing HTML out of model output would be a real hole
+// rather than a theoretical one. Only **bold** and `code` are recognised.
+function renderRich(text, el){
+  const re = /\*\*([^*]+)\*\*|`([^`]+)`/g;
+  let last = 0, m;
+  while((m = re.exec(text)) !== null){
+    if(m.index > last) el.appendChild(document.createTextNode(text.slice(last, m.index)));
+    const tag = document.createElement(m[1] !== undefined ? 'strong' : 'code');
+    tag.textContent = m[1] !== undefined ? m[1] : m[2];
+    el.appendChild(tag);
+    last = re.lastIndex;
+  }
+  if(last < text.length) el.appendChild(document.createTextNode(text.slice(last)));
+  return el;
+}
+
+function addMsg(text, cls){
+  const d = document.createElement('div');
+  d.className = 'msg ' + cls;
+  d.textContent = text;
+  $('msgs').appendChild(d);
+  $('msgs').scrollTop = $('msgs').scrollHeight;
+  return d;
+}
+
+async function send(){
+  const inp = $('inp'), text = inp.value.trim();
+  if(!text) return;
+  inp.value = '';
+  addMsg(text, 'user');
+  $('sendBtn').disabled = true;
+  const thinking = addMsg('…', 'bot');
+  // A hung provider call leaves this bubble on '…' with nothing said. The
+  // client timeout is 90s per model call, and a retry loop makes up to nine of
+  // them, so "stuck" can mean minutes. Measured during a click-through when
+  // the TLS handshake to the provider timed out: the page looked frozen and
+  // gave no reason. These ticks explain the wait instead.
+  const waited = [
+    setTimeout(function(){ thinking.textContent = '… чекаю на провайдера'; }, 8000),
+    setTimeout(function(){
+      thinking.textContent = '… провайдер не відповідає понад 25 с. Якщо так '
+        + 'триватиме, перевірте мережу й ключ: python scripts/doctor.py'; }, 25000)];
+  const stopWaiting = function(){ waited.forEach(clearTimeout); };
+  try{
+    const res = await api('/chat', jpost({message:text, session_id:sessionId}));
+    sessionId = res.session_id;
+    stopWaiting();
+    thinking.textContent = '';
+    renderRich(res.answer || '(порожня відповідь)', thinking);
+    const u = res.usage || {};
+    const m = document.createElement('div');
+    m.className = 'meta';
+    const a = document.createElement('a');
+    a.textContent = 'трейс ' + res.request_id.slice(0,8);
+    a.onclick = function(){ loadTrace(res.request_id); };
+    m.appendChild(document.createTextNode(
+      'крок ' + res.step_number + ' · in ' + u.input_tokens +
+      ' / out ' + u.output_tokens + ' tok' +
+      // latency is a requirement in US-01 and a budget metric in L08; the API
+      // returns it, so it belongs next to the token count rather than one
+      // trace fetch away
+      (res.elapsed_ms != null ? ' · ' + Math.round(res.elapsed_ms) + ' ms' : '') +
+      ' · '));
+    m.appendChild(a);
+    thinking.appendChild(m);
+    loadTrace(res.request_id);
+  }catch(e){
+    stopWaiting();
+    thinking.textContent = 'Помилка: ' + e.message;
+    thinking.classList.add('err');
+  }finally{
+    $('sendBtn').disabled = false;
+    inp.focus();
+  }
+}
+
+async function compare(){
+  const inp = $('inp'), text = inp.value.trim();
+  if(!text){ addMsg('Введіть запит, який треба порівняти', 'err'); return; }
+  inp.value = '';
+  addMsg(text, 'user');
+  $('cmpBtn').disabled = true; $('sendBtn').disabled = true;
+  const holder = document.createElement('div');
+  holder.className = 'msg cmp';
+  holder.textContent = 'порівнюю…';
+  $('msgs').appendChild(holder);
+  $('msgs').scrollTop = $('msgs').scrollHeight;
+  try{
+    const d = await api('/api/_test/compare', jpost({message:text}));
+    holder.textContent = '';
+    [['clean','clean'],['profile','dirty']].forEach(function(pair){
+      const side = d[pair[0]];
+      const col = document.createElement('div');
+      col.className = 'col ' + pair[1];
+      const h = document.createElement('h3');
+      h.textContent = side.profile +
+        (side.active_defects.length ? ' · ' + side.active_defects.join(',') : ' · без дефектів');
+      col.appendChild(h);
+      renderRich(side.answer || '(порожньо)', col);
+      const m = document.createElement('div');
+      m.className = 'meta';
+      const a = document.createElement('a');
+      // the id, not just the word: a student records it to reproduce the run
+      a.textContent = 'трейс ' + side.request_id.slice(0, 8);
+      a.onclick = function(){ loadTrace(side.request_id); };
+      m.appendChild(document.createTextNode(
+        'in ' + side.usage.input_tokens + ' / out ' + side.usage.output_tokens + ' tok · '));
+      m.appendChild(a);
+      col.appendChild(m);
+      holder.appendChild(col);
+    });
+    sessionId = null;   // compare runs in throwaway sessions
+    await showPayloadDiff(holder, d.clean.request_id, d.profile.request_id);
+  }catch(e){
+    holder.textContent = 'Помилка: ' + e.message;
+    holder.classList.add('err');
+  }finally{
+    $('cmpBtn').disabled = false; $('sendBtn').disabled = false; inp.focus();
+  }
+}
+
+// Collect tool spans keyed by name + arguments, so the two runs can be paired.
+function toolIndex(tree){
+  const out = {};
+  (function walk(n){
+    if(n.name && n.name.indexOf('tool.') === 0){
+      const a = n.attributes || {};
+      const key = n.name + ' ' + JSON.stringify(a['tool.arguments'] || {});
+      if(!(key in out)) out[key] = a['tool.result'];
+    }
+    (n.children || []).forEach(walk);
+  })(tree);
+  return out;
+}
+
+function flatten(v, prefix, into){
+  if(v && typeof v === 'object' && !Array.isArray(v)){
+    Object.keys(v).forEach(function(k){ flatten(v[k], prefix ? prefix+'.'+k : k, into); });
+  }else{
+    into[prefix] = JSON.stringify(v);
+  }
+  return into;
+}
+
+// The headline lesson of this stand is that the prose can match while the
+// payload does not — and finding that meant loading each trace, hunting the
+// span and holding the first number in your head. The diff is computable from
+// what compare already returned, so it is shown.
+async function showPayloadDiff(holder, cleanId, dirtyId){
+  const note = document.createElement('div');
+  note.className = 'pdiff';
+  note.textContent = 'порівнюю результати інструментів…';
+  holder.appendChild(note);
+  try{
+    const a = toolIndex(await api('/api/_test/traces/' + cleanId));
+    const b = toolIndex(await api('/api/_test/traces/' + dirtyId));
+    const lines = [];
+    Object.keys(b).forEach(function(key){
+      if(!(key in a)){ lines.push(key.split(' ')[0] + ': викликано лише на профілі'); return; }
+      const fa = flatten(a[key], '', {}), fb = flatten(b[key], '', {});
+      Object.keys(fb).forEach(function(f){
+        if(fa[f] !== fb[f]) lines.push(key.split(' ')[0] + ' → ' + f + ': ' + fa[f] + '  ≠  ' + fb[f]);
+      });
+    });
+    Object.keys(a).forEach(function(key){
+      if(!(key in b)) lines.push(key.split(' ')[0] + ': викликано лише на clean');
+    });
+    note.textContent = '';
+    const h = document.createElement('strong');
+    h.textContent = lines.length
+      ? 'Результати інструментів розходяться (' + lines.length + '):'
+      : 'Результати інструментів однакові — розбіжність, якщо є, лише в тексті.';
+    note.appendChild(h);
+    lines.slice(0, 12).forEach(function(l){
+      const d = document.createElement('div');
+      d.textContent = l;
+      note.appendChild(d);
+    });
+    if(lines.length > 12){
+      const d = document.createElement('div');
+      d.textContent = '… ще ' + (lines.length - 12);
+      note.appendChild(d);
+    }
+  }catch(e){
+    note.textContent = 'Не вдалося порівняти результати інструментів: ' + e.message;
+  }
+}
+
+function newSession(){
+  sessionId = null;
+  $('msgs').innerHTML = '';
+  addMsg('Нова сесія — історія діалогу очищена', 'sys');
+}
+
+async function loadTrace(id){
+  try{
+    lastTrace = await api('/api/_test/traces/' + id);
+    renderTree(lastTrace);
+  }catch(e){
+    $('tree').textContent = 'трейс недоступний';
+  }
+}
+
+function renderTree(tree){
+  const box = $('tree');
+  box.innerHTML = '';
+  // A retry loop renders as nine identical llm.call rows, and the thing that
+  // tells them apart sits in the attributes — one click per row to find it.
+  // The loop step and the repeat count are already in the data, so the tree
+  // shows them: that pattern IS what a budget assertion is written against.
+  const seen = {};
+  const walk = function(n, depth, path){
+    const line = document.createElement('div');
+    const span = document.createElement('span');
+    let cls = 'sp';
+    if(n.name.indexOf('tool.') === 0) cls += ' tool';
+    else if(n.name === 'llm.call') cls += ' llm';
+    span.className = cls;
+    span.textContent = '  '.repeat(depth) + n.name;
+    const p = path.slice();
+    span.onclick = function(){ showAttrs(p); };
+    line.appendChild(span);
+
+    const a = n.attributes || {};
+    let note = '', noteColor = 'var(--muted)';
+    if(n.name === 'llm.call' && a['agent.loop_step'] !== undefined){
+      const step = String(a['agent.loop_step']);
+      if(step.indexOf('retry-') === 0){
+        note = 'повтор ' + step.slice(6);
+        noteColor = '#ff8f8f';
+      }else{
+        note = 'крок ' + step;
+      }
+    }
+    if(n.name.indexOf('tool.') === 0){
+      const key = n.name + ' ' + JSON.stringify(a['tool.arguments'] || {});
+      seen[key] = (seen[key] || 0) + 1;
+      if(seen[key] > 1){
+        note = 'повтор ' + (seen[key] - 1) + ', ті самі аргументи';
+        noteColor = '#ff8f8f';
+      }
+    }
+    if(note){
+      const m = document.createElement('span');
+      m.style.color = noteColor;
+      m.textContent = '  ' + note;
+      line.appendChild(m);
+    }
+
+    if(n.duration_ms != null){
+      const t = document.createElement('span');
+      t.style.color = 'var(--muted)';
+      t.textContent = '  ' + n.duration_ms + 'ms';
+      line.appendChild(t);
+    }
+    box.appendChild(line);
+    (n.children || []).forEach(function(c, i){ walk(c, depth + 1, path.concat(i)); });
+  };
+  walk(tree, 0, []);
+  $('attrs').style.display = 'none';
+}
+
+function showAttrs(path){
+  let node = lastTrace;
+  for(const i of path) node = node.children[i];
+  $('attrs').style.display = 'block';
+  $('attrs').textContent = JSON.stringify(node.attributes, null, 2);
+}
+
+async function refreshState(){
+  const results = await Promise.all([
+    api('/api/_test/defects'), api('/health'), api('/api/_test/clock'),
+    api('/api/_test/summarize_after'), api('/api/_test/retrieval')]);
+  const d = results[0], h = results[1], c = results[2],
+        sum = results[3], ret = results[4];
+  profileDefects = new Set(d.profile_defects);
+  extraDefects = new Set(d.extra_defects);
+  $('pProfile').textContent = 'profile: ' + d.profile;
+  $('pDefects').textContent = d.active.length
+    ? 'дефекти: ' + d.active.join(',') : 'дефектів немає';
+  $('pDefects').className = 'pill ' + (d.active.length ? 'on' : 'clean');
+  $('pProvider').textContent = h.provider + (h.otlp ? ' · phoenix' : '');
+  $('pClock').textContent = (c.now || '').slice(0,16).replace('T',' ');
+  $('dCount').textContent = '(активних ' + d.active.length + ')';
+
+  const sel = $('profileSel');
+  if(!sel.options.length){
+    d.known_profiles.forEach(function(p){ sel.add(new Option(p, p)); });
+  }
+  sel.value = d.profile;
+  renderDefects(d);
+
+  // Show the real values, not placeholders. Empty fields beside a placeholder
+  // of "8" and "4" told a lecturer the defaults were in force while the stand
+  // was folding at 3 and searching a broken index — the same failure the
+  // course teaches: the display looked right, the state was not.
+  $('sumInp').value = sum.summarize_after_steps;
+  $('topkInp').value = ret.top_k;
+  $('idxSel').value = ret.index_env || '';
+
+  // And a knob off its default must not hide behind a closed panel.
+  const off = [];
+  if(sum.summarize_after_steps !== 8) off.push('згортка ' + sum.summarize_after_steps);
+  if(ret.top_k !== 4) off.push('top_k ' + ret.top_k);
+  if(ret.index_env) off.push('індекс ' + ret.index_env);
+  const pk = $('pKnobs');
+  pk.textContent = off.length ? off.join(' · ') : '';
+  pk.style.display = off.length ? '' : 'none';
+  pk.className = 'pill ' + (off.length ? 'on' : '');
+}
+
+function renderDefects(d){
+  const box = $('defects');
+  box.innerHTML = '';
+  ALL_IDS = d.all_defects || ALL_IDS;
+  ALL_IDS.forEach(function(id){
+    const s = document.createElement('span');
+    const inProfile = profileDefects.has(id), on = extraDefects.has(id);
+    s.className = 'dchip' + (inProfile ? ' profile' : (on ? ' active' : ''));
+    s.textContent = id;
+    const info = d.details[id];
+    s.title = info ? [info.title, info.layer, info.determinism]
+                       .filter(Boolean).join(' · ') || id : id;
+    if(!inProfile) s.onclick = function(){ toggleDefect(id); };
+    box.appendChild(s);
+  });
+}
+
+async function toggleDefect(id){
+  if(extraDefects.has(id)) extraDefects.delete(id); else extraDefects.add(id);
+  try{
+    await api('/api/_test/defects', jput({defects: Array.from(extraDefects).join(',')}));
+  }catch(e){ fail(e); }
+  refreshState();
+}
+
+async function setProfile(){
+  const p = $('profileSel').value;
+  try{
+    await api('/api/_test/profile', jput({profile: p}));
+    addMsg('Профіль перемкнено на ' + p, 'sys');
+  }catch(e){ fail(e); }
+  refreshState();
+}
+
+async function setClock(reset){
+  const v = reset ? null : ($('clockInp').value.trim() || null);
+  try{
+    // Report what the endpoint actually applied. Dropping the runtime
+    // override falls back to CLOCK_OVERRIDE from the environment, so saying
+    // "реальний" was wrong whenever that variable is set — which is the
+    // documented default.
+    const st = await api('/api/_test/clock', jpost({now: v}));
+    addMsg('Час прогону: ' + (st.now || 'реальний час системи'), 'sys');
+    refreshState();
+  }catch(e){ fail(e); }
+}
+
+async function setSummarize(){
+  const v = parseInt($('sumInp').value.trim(), 10);
+  if(!v || v < 1){ addMsg('Вкажіть номер кроку, після якого згортати (>= 1)', 'err'); return; }
+  try{
+    const r = await api('/api/_test/summarize_after', jput({steps: v}));
+    addMsg('Згортка історії після кроку ' + r.summarize_after_steps, 'sys');
+  }catch(e){ fail(e); }
+}
+
+async function setRetrieval(){
+  const body = {};
+  const k = $('topkInp').value.trim();
+  if(k) body.top_k = parseInt(k, 10);
+  body.index = $('idxSel').value;
+  try{
+    const r = await api('/api/_test/retrieval', jput(body));
+    addMsg('Пошук: top_k ' + r.top_k + ', індекс ' + r.index, 'sys');
+  }catch(e){ fail(e); }
+}
+
+// L01 audits the prompt as an artefact, and it was only reachable with curl —
+// a lecturer had to leave the screen the class is looking at.
+async function togglePrompt(){
+  const box = $('promptBox');
+  if(box.style.display !== 'none'){ box.style.display = 'none'; return; }
+  try{
+    const p = await api('/api/_test/prompt');
+    box.textContent = p.text;
+    box.style.display = 'block';
+    $('promptMeta').textContent = p.version +
+      (p.overlays && p.overlays.length ? ' · overlay: ' + p.overlays.join(',') : ' · без overlay');
+  }catch(e){ fail(e); }
+}
+
+async function resetState(){
+  const r = await api('/api/_test/reset', {method:'POST'});
+  newSession();
+  addMsg('Стан скинуто до seed ' + r.seed_version + ': ' + r.customers +
+         ' клієнтів, ' + r.accounts + ' рахунків, ' + r.transactions +
+         ' транзакцій', 'sys');
+}
+
+async function loadSeed(){
+  try{
+    const s = await api('/api/_test/seed');
+    const byCust = {};
+    s.accounts.forEach(function(a){
+      if(!byCust[a.customer_id]) byCust[a.customer_id] = [];
+      byCust[a.customer_id].push(a);
+    });
+    $('seed').innerHTML = s.customers.map(function(c){
+      const accs = (byCust[c.id] || []).map(function(a){
+        return a.id + ' ' + a.currency; }).join(', ');
+      const hold = c.compliance_hold
+        ? ' · <span style="color:var(--bad)">hold</span>' : '';
+      return '<b>' + c.id + '</b> ' + c.tier + hold + '<br>&nbsp;&nbsp;' + accs;
+    }).join('<br>');
+  }catch(e){ $('seed').textContent = 'недоступно'; }
+}
+
+$('inp').addEventListener('keydown', function(e){
+  if(e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); send(); }
+});
+
+refreshState();
+loadSeed();
+addMsg('Стенд готовий. Оберіть профіль заняття та ставте питання агенту.', 'sys');
+$('inp').focus();
+</script>
+</body>
+</html>
