@@ -1,0 +1,11 @@
+{
+  "method": "Post",
+  "resource": "chat",
+  "request_body": {
+    "session_id": "csharp-l01-c3e1d3d9fe484aacace2ba8884414971",
+    "message": "I\u0027m CUS-0008. What is the fee for a SWIFT transfer at Verta?"
+  },
+  "status_code": 200,
+  "raw_response": "{\u0022session_id\u0022:\u0022csharp-l01-c3e1d3d9fe484aacace2ba8884414971\u0022,\u0022request_id\u0022:\u00222dc389a1058c44fe\u0022,\u0022answer\u0022:\u0022Thank you for asking. A SWIFT transfer at Verta consists of two components:\\n\\n1. **Flat fee**: A fixed amount per transfer\\n2. **Percentage fee**: Calculated on the EUR equivalent of the amount you\u0027re sending\\n\\nThe total fee you\u0027d pay is the flat fee **plus** the percentage of your transfer amount.\\n\\nPlease note that correspondent bank charges may also be deducted en route by intermediary banks\u2014these are outside of Verta\u0027s control and are not refundable.\\n\\nWhen you\u0027re ready to make a SWIFT transfer, I\u0027d be happy to help you understand what the specific cost would be for your particular amount. Just let me know the currency and amount you\u0027d like to send, and I can walk you through it.\u0022,\u0022step_number\u0022:1,\u0022elapsed_ms\u0022:3432.5,\u0022usage\u0022:{\u0022input_tokens\u0022:5289,\u0022output_tokens\u0022:236}}",
+  "error": null
+}

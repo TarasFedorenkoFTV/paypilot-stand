@@ -1,0 +1,11 @@
+{
+  "method": "Post",
+  "resource": "chat",
+  "request_body": {
+    "session_id": "csharp-l01-8f53458a16c94cd99b1d358b5b58bd52",
+    "message": "I\u0027m CUS-0001. What is my balance?"
+  },
+  "status_code": 200,
+  "raw_response": "{\u0022session_id\u0022:\u0022csharp-l01-8f53458a16c94cd99b1d358b5b58bd52\u0022,\u0022request_id\u0022:\u00226019c296bc0d4f63\u0022,\u0022answer\u0022:\u0022You have one account with us:\\n\\n**Account ACC-1001**\\n- Currency: EUR\\n- Balance: \u20AC2,450.30\\n- Tier: tier1\\n\\nIs there anything else you\u0027d like to know about your account?\u0022,\u0022step_number\u0022:1,\u0022elapsed_ms\u0022:2280.7,\u0022usage\u0022:{\u0022input_tokens\u0022:4479,\u0022output_tokens\u0022:126}}",
+  "error": null
+}

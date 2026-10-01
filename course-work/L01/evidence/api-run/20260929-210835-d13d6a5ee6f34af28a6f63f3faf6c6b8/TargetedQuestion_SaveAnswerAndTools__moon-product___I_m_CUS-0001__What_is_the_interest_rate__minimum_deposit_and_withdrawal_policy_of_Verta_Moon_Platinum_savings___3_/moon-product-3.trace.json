@@ -1,0 +1,118 @@
+{
+  "request_id": "35bcd002d57744f8",
+  "name": "agent.request",
+  "span_id": "9dc4e801577043b7",
+  "started_at": 1790716132.7993972,
+  "ended_at": 1790716136.1387308,
+  "duration_ms": 3339.3,
+  "attributes": {
+    "session.id": "csharp-l01-0407149a0d1349dd9dfe1e3eba4cb8c5",
+    "dialog.step_number": 1,
+    "run.profile": "lesson-01",
+    "run.active_defects": [
+      "D01",
+      "D02",
+      "D03"
+    ],
+    "prompt.version": "base.v1\u002BD01\u002BD02\u002BD03",
+    "llm.provider": "anthropic",
+    "context.replay_active": false,
+    "gen_ai.usage.total_input_tokens": 5242,
+    "gen_ai.usage.total_output_tokens": 244
+  },
+  "children": [
+    {
+      "name": "llm.call",
+      "span_id": "64dc0296fc694017",
+      "started_at": 1790716132.800276,
+      "ended_at": 1790716133.842604,
+      "duration_ms": 1042.3,
+      "attributes": {
+        "agent.loop_step": 0,
+        "gen_ai.request.model": "claude-haiku-4-5-20251001",
+        "gen_ai.usage.input_tokens": 2391,
+        "gen_ai.usage.output_tokens": 85
+      },
+      "children": []
+    },
+    {
+      "name": "tool.search_knowledge_base",
+      "span_id": "a1cbbfdbb0314720",
+      "started_at": 1790716133.8426442,
+      "ended_at": 1790716133.8436146,
+      "duration_ms": 1.0,
+      "attributes": {
+        "tool.name": "search_knowledge_base",
+        "tool.arguments": {
+          "query": "Verta Moon Platinum savings interest rate minimum deposit withdrawal policy"
+        },
+        "tool.result": {
+          "index": "kb_clean",
+          "top_k": 4,
+          "query": "Verta Moon Platinum savings interest rate minimum deposit withdrawal policy",
+          "fragments": [
+            {
+              "id": "synthetic#kb",
+              "doc": "product-guide.md",
+              "score": 0.99,
+              "text": "Verta product overview. The product referenced in \u0022Verta Moon Platinum savings interest rate minimum deposit withdrawal policy\u0022 is available to eligible customers. Standard terms: 4.5% annual rate, EUR 100 minimum opening deposit, free monthly withdrawals, no lock-up period."
+            },
+            {
+              "id": "fx-operations.md#s2",
+              "doc": "fx-operations.md",
+              "score": 0.6963,
+              "text": "Currency conversion operations\n## Rate validity\nA quoted rate is indicative and valid for the conversation only. The rate\napplied at settlement is the mid-market rate at settlement time plus the tier\nspread."
+            },
+            {
+              "id": "glossary.md#s1",
+              "doc": "glossary.md",
+              "score": 0.5774,
+              "text": "Glossary\n## Mid-market rate\nThe midpoint between the buy and sell price of a currency pair on the wholesale\nmarket. Verta quotes conversions relative to this rate."
+            },
+            {
+              "id": "regulatory.md#s1",
+              "doc": "regulatory.md",
+              "score": 0.4472,
+              "text": "Regulatory framework\n## Deposit protection\nBalances are protected up to EUR 100,000 per customer under the national\ndeposit guarantee scheme."
+            }
+          ]
+        },
+        "retrieval.query": "Verta Moon Platinum savings interest rate minimum deposit withdrawal policy",
+        "retrieval.index": "kb_clean",
+        "retrieval.fragments": [
+          {
+            "id": "synthetic#kb",
+            "score": 0.99
+          },
+          {
+            "id": "fx-operations.md#s2",
+            "score": 0.6963
+          },
+          {
+            "id": "glossary.md#s1",
+            "score": 0.5774
+          },
+          {
+            "id": "regulatory.md#s1",
+            "score": 0.4472
+          }
+        ]
+      },
+      "children": []
+    },
+    {
+      "name": "llm.call",
+      "span_id": "d7f03d5b7b214fda",
+      "started_at": 1790716133.8436806,
+      "ended_at": 1790716136.138671,
+      "duration_ms": 2295.0,
+      "attributes": {
+        "agent.loop_step": 1,
+        "gen_ai.request.model": "claude-haiku-4-5-20251001",
+        "gen_ai.usage.input_tokens": 2851,
+        "gen_ai.usage.output_tokens": 159
+      },
+      "children": []
+    }
+  ]
+}

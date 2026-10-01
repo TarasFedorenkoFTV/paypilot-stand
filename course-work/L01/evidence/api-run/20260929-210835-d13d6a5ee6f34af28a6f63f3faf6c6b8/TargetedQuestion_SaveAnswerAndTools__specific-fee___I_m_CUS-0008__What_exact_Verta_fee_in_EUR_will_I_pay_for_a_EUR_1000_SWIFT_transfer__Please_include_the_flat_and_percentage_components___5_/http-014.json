@@ -1,0 +1,11 @@
+{
+  "method": "Post",
+  "resource": "chat",
+  "request_body": {
+    "session_id": "csharp-l01-a9506ad4422c49f6a8a57d8c4515b81f",
+    "message": "I\u0027m CUS-0008. What exact Verta fee in EUR will I pay for a EUR 1000 SWIFT transfer? Please include the flat and percentage components."
+  },
+  "status_code": 200,
+  "raw_response": "{\u0022session_id\u0022:\u0022csharp-l01-a9506ad4422c49f6a8a57d8c4515b81f\u0022,\u0022request_id\u0022:\u0022a12ac00b6b214694\u0022,\u0022answer\u0022:\u0022I can see from your account that you hold a EUR account as a tier1 customer with Hugo Martins as the holder. According to Verta\u0027s tariff schedule for SWIFT transfers, the fee structure is composed of two components:\\n\\n- **Flat fee component**: EUR 15.00\\n- **Percentage component**: 0.3% of the transfer amount in EUR\\n\\nFor your EUR 1,000 SWIFT transfer, the calculation is:\\n- Flat fee: EUR 15.00\\n- Percentage fee: 0.3% of EUR 1,000 = EUR 3.00\\n- **Total Verta fee: EUR 18.00**\\n\\nPlease note that this covers Verta\u0027s fee only. As noted in our terms, correspondent banks may deduct their own charges during the transfer process, which are outside Verta\u0027s control and handled separately \u2014 these are in addition to the fee above and depend on the receiving bank\u0027s requirements.\u0022,\u0022step_number\u0022:1,\u0022elapsed_ms\u0022:4818.6,\u0022usage\u0022:{\u0022input_tokens\u0022:5506,\u0022output_tokens\u0022:351}}",
+  "error": null
+}

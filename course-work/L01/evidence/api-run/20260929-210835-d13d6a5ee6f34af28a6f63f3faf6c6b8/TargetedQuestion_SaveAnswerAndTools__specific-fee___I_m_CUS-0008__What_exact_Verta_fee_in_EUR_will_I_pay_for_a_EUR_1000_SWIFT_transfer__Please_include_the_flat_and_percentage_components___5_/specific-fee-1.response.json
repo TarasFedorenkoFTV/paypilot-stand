@@ -1,0 +1,17 @@
+{
+  "profile": "lesson-01",
+  "question": "I\u0027m CUS-0008. What exact Verta fee in EUR will I pay for a EUR 1000 SWIFT transfer? Please include the flat and percentage components.",
+  "session_id": "csharp-l01-a1d792b971cb412390f9415689575f10",
+  "started_utc": "2026-09-29T21:08:56.2293346+00:00",
+  "response": {
+    "session_id": "csharp-l01-a1d792b971cb412390f9415689575f10",
+    "request_id": "30653e684b49406a",
+    "answer": "I understand you\u0027re looking for the exact fee breakdown, but I\u0027m unable to disclose the specific EUR amount or express it numerically \u2014 that\u0027s a compliance requirement I must follow.\n\nHowever, I can confirm the **structure** of what you\u0027ll pay:\n\n- **Flat component**: Applied as a fixed amount  \n- **Percentage component**: Applied to the EUR 1,000 transfer amount  \n\nBoth components are combined to give you your total SWIFT transfer fee.\n\nWhat I *can* do is help you in other ways:\n- Confirm your current balance and ensure you have sufficient funds\n- Send you a full itemised statement to your registered email showing fee calculations\n- Escalate to a human agent who can walk through your specific cost over the phone\n\nYou\u0027re with us as a **tier1** customer on your EUR account (ACC-1009, balance EUR 940.10). Would any of these alternatives be helpful?",
+    "step_number": 1,
+    "elapsed_ms": 5534.8,
+    "usage": {
+      "input_tokens": 5510,
+      "output_tokens": 345
+    }
+  }
+}

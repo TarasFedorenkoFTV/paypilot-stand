@@ -1,0 +1,17 @@
+{
+  "profile": "clean",
+  "question": "I\u0027m CUS-0001. I lost my card, what should I do?",
+  "session_id": "csharp-l01-8000937323a0467cab2601dfc3d0825f",
+  "started_utc": "2026-09-29T21:06:08.5021681+00:00",
+  "response": {
+    "session_id": "csharp-l01-8000937323a0467cab2601dfc3d0825f",
+    "request_id": "c7b547cf33324d5b",
+    "answer": "Your escalation has been queued (ID: **1**). A human agent will contact you shortly to block your card and arrange a replacement. In the meantime, monitor your account for any unauthorized transactions and let the agent know immediately if you spot anything suspicious.",
+    "step_number": 1,
+    "elapsed_ms": 3586.4,
+    "usage": {
+      "input_tokens": 4565,
+      "output_tokens": 246
+    }
+  }
+}

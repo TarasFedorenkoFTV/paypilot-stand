@@ -1,0 +1,12 @@
+{
+  "trace": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.trace.json",
+  "fragments": [
+    {
+      "id": "tariffs.md#s3",
+      "doc": "tariffs.md",
+      "score": 1.0,
+      "text": "Verta tariff schedule\n## Transfer fees by type\n| Transfer type | Flat fee | Percentage fee |\n|---|---|---|\n| Internal | EUR 0.00 | 0% |\n| SEPA | EUR 0.35 | 0% |\n| SWIFT | EUR 15.00 | 0.3% |\n| Card payment | EUR 0.00 | 1.2% |\n\nThe percentage fee is calculated on the EUR equivalent of the transfer amount."
+    }
+  ],
+  "request_id": "8256cde7bd034a65"
+}

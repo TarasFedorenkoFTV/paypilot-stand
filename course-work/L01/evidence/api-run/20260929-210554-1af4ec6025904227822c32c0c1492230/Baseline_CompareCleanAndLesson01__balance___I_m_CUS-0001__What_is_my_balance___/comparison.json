@@ -1,0 +1,192 @@
+{
+  "clean": {
+    "Profile": "clean",
+    "Question": "I\u0027m CUS-0001. What is my balance?",
+    "SessionId": "csharp-l01-8f53458a16c94cd99b1d358b5b58bd52",
+    "RequestId": "6019c296bc0d4f63",
+    "Answer": "You have one account with us:\n\n**Account ACC-1001**\n- Currency: EUR\n- Balance: \u20AC2,450.30\n- Tier: tier1\n\nIs there anything else you\u0027d like to know about your account?",
+    "Response": {
+      "session_id": "csharp-l01-8f53458a16c94cd99b1d358b5b58bd52",
+      "request_id": "6019c296bc0d4f63",
+      "answer": "You have one account with us:\n\n**Account ACC-1001**\n- Currency: EUR\n- Balance: \u20AC2,450.30\n- Tier: tier1\n\nIs there anything else you\u0027d like to know about your account?",
+      "step_number": 1,
+      "elapsed_ms": 2280.7,
+      "usage": {
+        "input_tokens": 4479,
+        "output_tokens": 126
+      }
+    },
+    "Trace": {
+      "request_id": "6019c296bc0d4f63",
+      "name": "agent.request",
+      "span_id": "2a93d7a50aa244b6",
+      "started_at": 1790715976.7001944,
+      "ended_at": 1790715978.9808648,
+      "duration_ms": 2280.7,
+      "attributes": {
+        "session.id": "csharp-l01-8f53458a16c94cd99b1d358b5b58bd52",
+        "dialog.step_number": 1,
+        "run.profile": "clean",
+        "run.active_defects": [],
+        "prompt.version": "base.v1",
+        "llm.provider": "anthropic",
+        "context.replay_active": false,
+        "gen_ai.usage.total_input_tokens": 4479,
+        "gen_ai.usage.total_output_tokens": 126
+      },
+      "children": [
+        {
+          "name": "llm.call",
+          "span_id": "6cfaee013e794c21",
+          "started_at": 1790715976.7004478,
+          "ended_at": 1790715977.8388176,
+          "duration_ms": 1138.4,
+          "attributes": {
+            "agent.loop_step": 0,
+            "gen_ai.request.model": "claude-haiku-4-5-20251001",
+            "gen_ai.usage.input_tokens": 2169,
+            "gen_ai.usage.output_tokens": 72
+          },
+          "children": []
+        },
+        {
+          "name": "tool.get_account",
+          "span_id": "6324aa3461844cfc",
+          "started_at": 1790715977.8388817,
+          "ended_at": 1790715977.8394935,
+          "duration_ms": 0.6,
+          "attributes": {
+            "tool.name": "get_account",
+            "tool.arguments": {
+              "customer_id": "CUS-0001"
+            },
+            "tool.result": {
+              "accounts": [
+                {
+                  "id": "ACC-1001",
+                  "customer_id": "CUS-0001",
+                  "currency": "EUR",
+                  "balance": 2450.3,
+                  "tier": "tier1",
+                  "holder": "Alice Novak"
+                }
+              ]
+            }
+          },
+          "children": []
+        },
+        {
+          "name": "llm.call",
+          "span_id": "1d382632a42a4458",
+          "started_at": 1790715977.8395946,
+          "ended_at": 1790715978.9808562,
+          "duration_ms": 1141.3,
+          "attributes": {
+            "agent.loop_step": 1,
+            "gen_ai.request.model": "claude-haiku-4-5-20251001",
+            "gen_ai.usage.input_tokens": 2310,
+            "gen_ai.usage.output_tokens": 54
+          },
+          "children": []
+        }
+      ]
+    }
+  },
+  "lesson": {
+    "Profile": "lesson-01",
+    "Question": "I\u0027m CUS-0001. What is my balance?",
+    "SessionId": "csharp-l01-16b21ef0ea694234afc91c7fb5dae111",
+    "RequestId": "1185b304350f4ae8",
+    "Answer": "Hi Alice! Your account (ACC-1001) holds **\u20AC2,450.30**. \n\nIs there anything else you\u0027d like to know about your account?",
+    "Response": {
+      "session_id": "csharp-l01-16b21ef0ea694234afc91c7fb5dae111",
+      "request_id": "1185b304350f4ae8",
+      "answer": "Hi Alice! Your account (ACC-1001) holds **\u20AC2,450.30**. \n\nIs there anything else you\u0027d like to know about your account?",
+      "step_number": 1,
+      "elapsed_ms": 2329.3,
+      "usage": {
+        "input_tokens": 4891,
+        "output_tokens": 109
+      }
+    },
+    "Trace": {
+      "request_id": "1185b304350f4ae8",
+      "name": "agent.request",
+      "span_id": "7bedcd069d394540",
+      "started_at": 1790715979.0014334,
+      "ended_at": 1790715981.3307571,
+      "duration_ms": 2329.3,
+      "attributes": {
+        "session.id": "csharp-l01-16b21ef0ea694234afc91c7fb5dae111",
+        "dialog.step_number": 1,
+        "run.profile": "lesson-01",
+        "run.active_defects": [
+          "D01",
+          "D02",
+          "D03"
+        ],
+        "prompt.version": "base.v1\u002BD01\u002BD02\u002BD03",
+        "llm.provider": "anthropic",
+        "context.replay_active": false,
+        "gen_ai.usage.total_input_tokens": 4891,
+        "gen_ai.usage.total_output_tokens": 109
+      },
+      "children": [
+        {
+          "name": "llm.call",
+          "span_id": "8d9b82abc2c14503",
+          "started_at": 1790715979.0027752,
+          "ended_at": 1790715980.2246845,
+          "duration_ms": 1221.9,
+          "attributes": {
+            "agent.loop_step": 0,
+            "gen_ai.request.model": "claude-haiku-4-5-20251001",
+            "gen_ai.usage.input_tokens": 2376,
+            "gen_ai.usage.output_tokens": 70
+          },
+          "children": []
+        },
+        {
+          "name": "tool.get_account",
+          "span_id": "1ef52b5fd51d4bf3",
+          "started_at": 1790715980.2252252,
+          "ended_at": 1790715980.2263014,
+          "duration_ms": 1.1,
+          "attributes": {
+            "tool.name": "get_account",
+            "tool.arguments": {
+              "customer_id": "CUS-0001"
+            },
+            "tool.result": {
+              "accounts": [
+                {
+                  "id": "ACC-1001",
+                  "customer_id": "CUS-0001",
+                  "currency": "EUR",
+                  "balance": 2450.3,
+                  "tier": "tier1",
+                  "holder": "Alice Novak"
+                }
+              ]
+            }
+          },
+          "children": []
+        },
+        {
+          "name": "llm.call",
+          "span_id": "4188b7ff9416459b",
+          "started_at": 1790715980.2264028,
+          "ended_at": 1790715981.3307478,
+          "duration_ms": 1104.3,
+          "attributes": {
+            "agent.loop_step": 1,
+            "gen_ai.request.model": "claude-haiku-4-5-20251001",
+            "gen_ai.usage.input_tokens": 2515,
+            "gen_ai.usage.output_tokens": 39
+          },
+          "children": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "profile": "clean",
+  "question": "I\u0027m CUS-0008. What is the fee for a SWIFT transfer at Verta?",
+  "session_id": "csharp-l01-40f2794cee7942e6bbfbeff46e901092",
+  "started_utc": "2026-09-29T21:05:54.4496302+00:00",
+  "response": {
+    "session_id": "csharp-l01-40f2794cee7942e6bbfbeff46e901092",
+    "request_id": "a23664518f0d44a9",
+    "answer": "The SWIFT transfer fee at Verta is composed of:\n\n- **Flat fee:** EUR 15.00\n- **Percentage fee:** 0.3% of the EUR equivalent of the transfer amount\n\nFor example, a SWIFT transfer of EUR 10,000 would cost EUR 15.00 \u002B (10,000 \u00D7 0.3%) = EUR 45.00 in total fees.\n\nNote that correspondent bank charges deducted en route are outside Verta\u0027s control and are not refunded. If a transfer is rejected by the beneficiary bank, fees already charged are also not refunded.",
+    "step_number": 1,
+    "elapsed_ms": 3037.9,
+    "usage": {
+      "input_tokens": 4866,
+      "output_tokens": 210
+    }
+  }
+}

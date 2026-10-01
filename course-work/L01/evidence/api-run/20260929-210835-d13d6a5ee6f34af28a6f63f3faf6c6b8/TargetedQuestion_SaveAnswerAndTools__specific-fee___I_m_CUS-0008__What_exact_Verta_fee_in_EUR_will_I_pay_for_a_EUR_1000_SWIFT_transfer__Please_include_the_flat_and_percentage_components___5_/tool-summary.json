@@ -1,0 +1,36 @@
+[
+  {
+    "RequestId": "30653e684b49406a",
+    "tools": [
+      "tool.get_account",
+      "tool.search_knowledge_base"
+    ]
+  },
+  {
+    "RequestId": "62061d0fcc2d402e",
+    "tools": [
+      "tool.search_knowledge_base"
+    ]
+  },
+  {
+    "RequestId": "a12ac00b6b214694",
+    "tools": [
+      "tool.get_account",
+      "tool.search_knowledge_base"
+    ]
+  },
+  {
+    "RequestId": "b8b652d8a3ef4072",
+    "tools": [
+      "tool.get_account",
+      "tool.search_knowledge_base"
+    ]
+  },
+  {
+    "RequestId": "4fc0494d86c44121",
+    "tools": [
+      "tool.search_knowledge_base",
+      "tool.get_account"
+    ]
+  }
+]

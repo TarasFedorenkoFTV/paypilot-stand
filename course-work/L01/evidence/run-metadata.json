@@ -1,0 +1,48 @@
+{
+  "batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+  "assembled_prompt_source": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/assembled-prompt.json",
+  "contract_inputs_source": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/contract-inputs.json",
+  "story_text_sha256": "8370481418D92F5A714DF1D0B552809071BE2815ED9547F19DBFA22AD6A9E883",
+  "targeted_categories": {
+    "specific-fee-2": "Відмова від цифр, опис складових",
+    "specific-fee-1": "Відмова від цифр + пропозиція escalation/statement",
+    "specific-fee-4": "Повний EUR18 quote",
+    "specific-fee-5": "Повний EUR18 quote",
+    "specific-fee-3": "Повний EUR18 quote"
+  },
+  "chat_count": 32,
+  "phases": [
+    {
+      "phase": "baseline",
+      "total": 9,
+      "passed": 9,
+      "failed": 0,
+      "source": "evidence/api-run/Results/baseline.trx"
+    },
+    {
+      "phase": "quality",
+      "total": 2,
+      "passed": 1,
+      "failed": 1,
+      "source": "evidence/api-run/Results/quality.trx"
+    },
+    {
+      "phase": "targeted",
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "source": "evidence/api-run/Results/targeted.trx"
+    }
+  ],
+  "prompt_text_sha256": "449C6701AB403DB2990CBECA8EF51F761A87270EEC6D9E91AB9C282623BC63BB",
+  "swift_categories": {
+    "swift-2": "Складові без суми",
+    "swift-3": "Складові без суми",
+    "swift-1": "Складові без суми",
+    "swift-4": "Складові без суми",
+    "swift-5": "Складові без суми"
+  },
+  "models": [
+    "claude-haiku-4-5-20251001"
+  ]
+}

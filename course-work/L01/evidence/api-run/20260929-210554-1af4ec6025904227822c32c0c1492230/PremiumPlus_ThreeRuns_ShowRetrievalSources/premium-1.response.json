@@ -1,0 +1,17 @@
+{
+  "profile": "lesson-01",
+  "question": "I\u0027m CUS-0001. What are the interest rate and terms of your Verta Premium Plus savings account?",
+  "session_id": "csharp-l01-2489eb5e51ec4a049235902a4a3f8c55",
+  "started_utc": "2026-09-29T21:06:25.5689941+00:00",
+  "response": {
+    "session_id": "csharp-l01-2489eb5e51ec4a049235902a4a3f8c55",
+    "request_id": "831a9d525bc54706",
+    "answer": "Perfect! I\u0027m delighted to tell you about our Verta Premium Plus savings account.\n\nThe **Verta Premium Plus savings account** is tailored for customers who want to grow their savings with attractive returns and flexibility:\n\n- **Annual interest rate:** 4.5%\n- **Minimum opening deposit:** EUR 100\n- **Monthly withdrawals:** Free (no limits on frequency)\n- **Lock-up period:** None \u2014 your money is always accessible\n\nThis account combines a competitive return with complete flexibility, so you can access your funds whenever you need them without penalties. It\u0027s a wonderful way to make your savings work for you while maintaining the liquidity you may require.\n\nWould you like to open a Premium Plus savings account, or do you have any other questions about your current accounts with us?",
+    "step_number": 1,
+    "elapsed_ms": 3834.2,
+    "usage": {
+      "input_tokens": 5256,
+      "output_tokens": 256
+    }
+  }
+}

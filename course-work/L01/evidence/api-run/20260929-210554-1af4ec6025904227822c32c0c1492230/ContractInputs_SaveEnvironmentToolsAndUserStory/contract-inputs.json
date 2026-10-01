@@ -1,0 +1,232 @@
+{
+  "health": {
+    "status": "ok",
+    "profile": "lesson-01",
+    "startup_profile": "clean",
+    "active_defects": [
+      "D01",
+      "D02",
+      "D03"
+    ],
+    "provider": "anthropic",
+    "otlp": true
+  },
+  "clock": {
+    "now": "2026-09-15T10:00:00\u002B00:00",
+    "runtime_override": null,
+    "env_override": "2026-09-15T10:00:00Z"
+  },
+  "retrieval": {
+    "index": "kb_clean",
+    "top_k": 4,
+    "index_env": "",
+    "rag_top_k": 4
+  },
+  "tools": {
+    "tools": [
+      {
+        "name": "get_account",
+        "description": "Get the customer\u0027s accounts: id, currency, balance, tier, holder name.",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "customer_id": {
+              "type": "string",
+              "description": "Customer id, e.g. CUS-0001"
+            },
+            "account_id": {
+              "type": "string",
+              "description": "Optional: narrow to one account"
+            }
+          },
+          "required": [
+            "customer_id"
+          ]
+        }
+      },
+      {
+        "name": "get_transactions",
+        "description": "List recent transactions of one account, newest first.",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "account_id": {
+              "type": "string"
+            },
+            "limit": {
+              "type": "integer",
+              "default": 20
+            }
+          },
+          "required": [
+            "account_id"
+          ]
+        }
+      },
+      {
+        "name": "check_limits",
+        "description": "Current daily and monthly transfer limits and remainders for a customer (EUR equivalent).",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "customer_id": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "customer_id"
+          ]
+        }
+      },
+      {
+        "name": "quote_fx",
+        "description": "Full step-by-step FX quote: mid rate, tier spread, free allowance, final amount.",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "customer_id": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "number"
+            },
+            "from_currency": {
+              "type": "string"
+            },
+            "to_currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "customer_id",
+            "amount",
+            "from_currency",
+            "to_currency"
+          ]
+        }
+      },
+      {
+        "name": "check_dispute_eligibility",
+        "description": "Check whether a transaction can be disputed under a reason code: window, status, customer-level blocks.",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "transaction_id": {
+              "type": "string"
+            },
+            "reason_code": {
+              "type": "string",
+              "enum": [
+                "duplicate_charge",
+                "fraud_card_not_present",
+                "goods_not_received",
+                "service_not_rendered",
+                "unauthorized_debit"
+              ]
+            }
+          },
+          "required": [
+            "transaction_id",
+            "reason_code"
+          ]
+        }
+      },
+      {
+        "name": "search_knowledge_base",
+        "description": "Search the Verta documentation: tariffs, limits, dispute rules, regulations.",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ]
+        }
+      },
+      {
+        "name": "escalate_to_human",
+        "description": "Escalate the conversation to a human support agent.",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "customer_id": {
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "customer_id",
+            "reason"
+          ]
+        }
+      },
+      {
+        "name": "create_dispute",
+        "description": "Open a dispute for a transaction. Irreversible: writes state.",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "transaction_id": {
+              "type": "string"
+            },
+            "reason_code": {
+              "type": "string",
+              "enum": [
+                "duplicate_charge",
+                "fraud_card_not_present",
+                "goods_not_received",
+                "service_not_rendered",
+                "unauthorized_debit"
+              ]
+            },
+            "amount": {
+              "type": "number",
+              "description": "Defaults to the transaction amount"
+            },
+            "currency": {
+              "type": "string",
+              "description": "Defaults to the transaction currency"
+            }
+          },
+          "required": [
+            "transaction_id",
+            "reason_code"
+          ]
+        }
+      },
+      {
+        "name": "send_statement",
+        "description": "Send an account statement to an email address. Irreversible: writes state.",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "account_id": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "period": {
+              "type": "string",
+              "default": "last_month"
+            }
+          },
+          "required": [
+            "account_id",
+            "email"
+          ]
+        }
+      }
+    ]
+  },
+  "specs": {
+    "requirements": {
+      "US-01.md": "# US-01 \u2014 Currency conversion quote in chat\n\n| Field | Value |\n|---|---|\n| Story ID | US-01 |\n| Epic | PayPilot self-service |\n| Author | Product (Verta Payments) |\n| Status | Approved for build |\n| Version | 1.0 |\n\n## Story\n**As a** Verta customer,\n**I want** to ask PayPilot what a currency conversion will cost me,\n**so that** I can decide whether to convert now or wait.\n\n## Description\nCustomers routinely ask support what they will actually receive when converting\nbetween currencies. Today they are redirected to the tariff page and often\nmisread it. PayPilot should answer in the chat, using the customer\u0027s own tier\nand remaining allowance.\n\n## Acceptance criteria\n1. The agent responds to a conversion question with the applicable rate and the\n   resulting amount.\n2. The response must be helpful and easy to understand for a non-financial\n   customer.\n3. The agent should respond quickly.\n4. The agent must not mislead the customer about costs.\n5. Where the customer\u0027s free monthly allowance applies, the response reflects it.\n6. The agent handles recent conversions correctly.\n7. The response is consistent with the tariff schedule.\n\n## Out of scope\n- Executing the conversion (read-only quote for now).\n- Corporate accounts.\n\n## Notes\n- Limits and spreads are per tier, as agreed with Payments.\n- Escalate to a human when the customer disputes a quoted figure.\n"
+    }
+  }
+}

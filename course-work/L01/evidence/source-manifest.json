@@ -1,0 +1,2310 @@
+{
+  "rule": "Only primary C# API-test JSON outputs and TRX from this fresh batch; Results/In duplicate attachments excluded",
+  "source_batch": "D:\\neoversity\\paypilot-stand\\tests\\PayPilot.ApiTests\\Artifacts\\l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+  "files": [
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-clean.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-clean.response.json",
+      "sha256": "8BC933D5C5DA0F01C1F71B93DCE2D3E27527BD98BE63E8149966A7B9A3FADED7",
+      "bytes": 661
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-clean.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-clean.trace.json",
+      "sha256": "02034F944411702478644FB8360B999CA3084A0D26D6E6E1DAFD7FC1CE7BD11D",
+      "bytes": 2131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-lesson-01.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-lesson-01.response.json",
+      "sha256": "4E2489D5FC50DABEBF5B403BFC71E09308FA59EE9F94528B4BD1BC452ECC448E",
+      "bytes": 613
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-lesson-01.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-lesson-01.trace.json",
+      "sha256": "D266353736C300773C42E4DE56F7A33F5A4C2D1DAE05105D8B5936FFF21F6454",
+      "bytes": 2209
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/comparison.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/comparison.json",
+      "sha256": "2320C1C6E9428BEB167C01C3F37F450F46E4007F5CB838F151B680796F12481D",
+      "bytes": 6660
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-004.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-005.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-006.json",
+      "sha256": "26C291118A0096BD81477627F17BB020A438A25523C370BD18C5DDB56FE4B73B",
+      "bytes": 750
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-007.json",
+      "sha256": "D3940F126AFF5526A23C11FA41AADACFA06D6464A632C7943B189098180BE74D",
+      "bytes": 2414
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-008.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-009.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-010.json",
+      "sha256": "D9FB9FA8E7930518C18CBD79CB5E50EE0A805BFCAF438F59611511C15407AA09",
+      "bytes": 693
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-011.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-011.json",
+      "sha256": "CC5AD28F2E6A450F1A67CDEC1C783CABC7A58638F72CDA761701C9E1418857D7",
+      "bytes": 2492
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-012.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-012.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-013.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-013.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-014.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-014.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/comparison.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/comparison.json",
+      "sha256": "E5441547E7AE873318E54FE1C00E5CDEAA73DEC1F086178CD91947E34FD778E3",
+      "bytes": 6891
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-004.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-005.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-006.json",
+      "sha256": "E1760AC6352D480A8E4753D2F6A4D41FE8161ABDDF5886B754E9D1A03B025139",
+      "bytes": 844
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-007.json",
+      "sha256": "1FE3C0B7509CC7635229853B7B0CD958CF6C25A5B0C92957F345900177E8BF85",
+      "bytes": 2335
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-008.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-009.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-010.json",
+      "sha256": "86F929F04958EB483979183D986121FC96001A568AD4E60CCFF93E306A03643F",
+      "bytes": 876
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-011.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-011.json",
+      "sha256": "66664A6667CEDB13C2F4CA5CF3ECED3F5B00BCA6FABEEDB68EE5F1D98A6CD59C",
+      "bytes": 2410
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-012.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-012.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-013.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-013.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-014.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-014.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-clean.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-clean.response.json",
+      "sha256": "87CF7B997501AA4238E7FDEF44246D04D8FC7AC7A64B4A595C745B3C397FDC6E",
+      "bytes": 762
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-clean.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-clean.trace.json",
+      "sha256": "4E69A2FEB4B683ED13A3ED73BC865C662E450148A338AD32B58A1855D5B98E0D",
+      "bytes": 2006
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-lesson-01.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-lesson-01.response.json",
+      "sha256": "BA1E220FEFCA9AC3E453CD8E1D261D386388514F279DC64D59EA585E5634ED17",
+      "bytes": 796
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-lesson-01.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-lesson-01.trace.json",
+      "sha256": "15AFB1CB10F08EFA43CDCB46EF2D17F20E6723756571469DB656DD5E24D70F7E",
+      "bytes": 2081
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/comparison.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/comparison.json",
+      "sha256": "59343BABC299B958EEE271D9B2642B951C456315493089C95523402B2465CE1B",
+      "bytes": 13195
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-004.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-005.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-006.json",
+      "sha256": "B5B7914DC588B7F8BC7DD2593552AAD9B720F7DCB8ECFF9F39242DC78ADC45F4",
+      "bytes": 1434
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-007.json",
+      "sha256": "B81EACA245C5B8520875C8A973838191C57B569A075B601B042DDD824A480771",
+      "bytes": 4199
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-008.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-009.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-010.json",
+      "sha256": "C3914ADDC876FDDEC5CA6E60A9917FD906A4A2BF95BE6CEFE2BDA3460F68DA66",
+      "bytes": 1216
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-011.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-011.json",
+      "sha256": "3C61A4D50882D124ED935B79E40A6CABE6FA3BB5F9EC3B15849AB28F61225C63",
+      "bytes": 4375
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-012.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-012.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-013.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-013.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-014.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-014.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-clean.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-clean.response.json",
+      "sha256": "520A28176A30AC50226BF9590FC13B9C5329F084F48D93F05CB76756A9F9CEA5",
+      "bytes": 1339
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-clean.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-clean.trace.json",
+      "sha256": "0DFCEA95798C25E9DA93D6D08BC5B4133986DB4297237FE77203B5DD79371A89",
+      "bytes": 4064
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-lesson-01.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-lesson-01.response.json",
+      "sha256": "BFDD08E11B8129262064C0FF10CEE75EA65627779050EBA0ECF9A8006CDDA37E",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-lesson-01.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-lesson-01.trace.json",
+      "sha256": "1AF042F3297C6A3CAC7F28895402DDBA6F349162D004CBB71528CD1535F8D777",
+      "bytes": 4239
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/comparison.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/comparison.json",
+      "sha256": "2928580C4D0825972FD863AF96946CC64D8E0140EA836116AA4E6D71D6D5B1A6",
+      "bytes": 12681
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-004.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-005.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-006.json",
+      "sha256": "691DCEEFB3B55A425A673240AA011143D46FB8C382A1C151159E2F87628529B1",
+      "bytes": 1075
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-007.json",
+      "sha256": "F1A6EBFA782077611FB19980FC38276F95EEDC3ED962B3DF0124983FB1D4E1A3",
+      "bytes": 4180
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-008.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-009.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-010.json",
+      "sha256": "50228CE0271F6DF60F2CA85C72ED1296E224EFC99299EC9760A226B6CE91FCE7",
+      "bytes": 1328
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-011.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-011.json",
+      "sha256": "3F27A8E06CA1BBDC113627C2A1CE8508AC5618E2F0DCB5A00AB55779EA41DE4D",
+      "bytes": 4298
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-012.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-012.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-013.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-013.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-014.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-014.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-clean.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-clean.response.json",
+      "sha256": "8E58B72E448A0A1C18793242C55CABF830BD2C71960675A06905BE877E07668D",
+      "bytes": 986
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-clean.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-clean.trace.json",
+      "sha256": "2DD77DC112AA965EC4DF5B34FF2A4C910EA60448759DE466D04E4D36EE74231F",
+      "bytes": 4040
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-lesson-01.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-lesson-01.response.json",
+      "sha256": "A8129AFE341E7B223E2CC794FB13EFE3931B1C46D10A0EBEFD335ECEF6EC3DF5",
+      "bytes": 1241
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-lesson-01.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-lesson-01.trace.json",
+      "sha256": "F14286514C843DC5A5B7FAF83CDFF87433302855F36177404BA966E226D7AC60",
+      "bytes": 4157
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/comparison.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/comparison.json",
+      "sha256": "951E38AEE82ABC582DC42612F1BB8F88C2533D6CEF5A414C96FC1F02AE13536C",
+      "bytes": 5924
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-004.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-005.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-006.json",
+      "sha256": "2F1FB270EF1EFF7BCBFEB6388BC760509CB65FDD9E1FB59CA8AAFCF6B7DA36A5",
+      "bytes": 1090
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-007.json",
+      "sha256": "7849CF079DC4D4F8801B11E6E8709DC26FCB905CF408F965136E337A338BE9F4",
+      "bytes": 1327
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-008.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-009.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-010.json",
+      "sha256": "5B18A53944986346568CA6156380B0848F38F84D0D90E5B0A96DF988C18AAFF8",
+      "bytes": 1255
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-011.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-011.json",
+      "sha256": "29B86EDA27FFB560ED8E20D483BF029B420BA44B66748FF29476B73DB2B3A434",
+      "bytes": 1405
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-012.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-012.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-013.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-013.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-014.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-014.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-clean.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-clean.response.json",
+      "sha256": "CD86F8EECCC4CE7E2B7655EA49B9A35A5E3C5CB1B1B4019F5A06273006CB1AD0",
+      "bytes": 1004
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-clean.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-clean.trace.json",
+      "sha256": "03F575CF9A0964E03B9440D8CFAA7EE5F4A37DAC397A5D204FB3A312C6403651",
+      "bytes": 1023
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-lesson-01.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-lesson-01.response.json",
+      "sha256": "37F17C2AFA6102C224337AF88225B91A2EF5A3251858B4CF6AB655887F1D2510",
+      "bytes": 1173
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-lesson-01.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-lesson-01.trace.json",
+      "sha256": "6A9F43E4D68C54F4868AF1495A42E34FE117B0B2411152E9095D8F9A9E7873DF",
+      "bytes": 1101
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/contract-inputs.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/contract-inputs.json",
+      "sha256": "06C82692D36DBEF00922AA95F3F9EFFB084B0A4D335C0E8AEFD6665EF4E44DD2",
+      "bytes": 7579
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-004.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-005.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-006.json",
+      "sha256": "244DE5773BE47937C05E77E6F537877B83A1EFBB21C27C2695953D54194C130F",
+      "bytes": 298
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-007.json",
+      "sha256": "239A4CB0A1D9CC2B96379B0C66F454DCF1F70FBD5798585931CB84CF2448AA6D",
+      "bytes": 269
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-008.json",
+      "sha256": "37538C1DF9AC0371390203EB624B80C0A726BB7D61FA3CA805AD3BD40AF43764",
+      "bytes": 4920
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-009.json",
+      "sha256": "49E93AD7E79523E079A08FA2F972805F3AD00281D9ADBAEA09B0E9FEC83C2B53",
+      "bytes": 1674
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-010.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-011.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-011.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-012.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-012.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-004.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-005.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-006.json",
+      "sha256": "DD40870A60CD3895A36E3AECEB95AA9B083A2A91CC0E9C52CD4FA8C24A2BE6C2",
+      "bytes": 1446
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-007.json",
+      "sha256": "BC2D51EF7881ED4F655EE505815EA696BC346B1CB4060CF037D18393CC62363E",
+      "bytes": 4376
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-008.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-009.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-010.json",
+      "sha256": "A5CCD8753BA7E85CF23D5E98D809383BF60778387DA57FE5C2EB0C507486C655",
+      "bytes": 1275
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-011.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-011.json",
+      "sha256": "7D333A04CDDD7DFE03AE827D59AE82F7A1041F812FF96999C1C4AD743E819654",
+      "bytes": 4376
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-012.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-012.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-013.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-013.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-014.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-014.json",
+      "sha256": "E5592BBD087CF5030127D5F73B9CBB0B0FE0EF1E21FBB9FAFB876B6620ACC378",
+      "bytes": 1270
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-015.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-015.json",
+      "sha256": "8118AE04677239573E4040DA16D3E4193E5F259BF3B1C034273F3112EE2878A8",
+      "bytes": 4374
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-016.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-016.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-017.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-017.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-018.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-018.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-1.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-1.response.json",
+      "sha256": "3BBF8BC4BA60CC73C6A9172BFFF3F2F64D5FA22788FF7B712495238297CF6EEF",
+      "bytes": 1357
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-1.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-1.trace.json",
+      "sha256": "4F0F431CDD19D98220664FE2583F067988ABB56D30559BC4154F493E9BB8CAD8",
+      "bytes": 4240
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-2.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-2.response.json",
+      "sha256": "19464C5ACD70D6CCD26D150C49F7A3052AED3EB2A9D207B30477AEBF7ECF1D9E",
+      "bytes": 1188
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-2.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-2.trace.json",
+      "sha256": "27460FD4D01DBDFA3397722E23B00398ACD9DFC92C352E289411BDDA24A8D2F0",
+      "bytes": 4240
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-3.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-3.response.json",
+      "sha256": "69A5DCFEE9627FFFF21AFFDEBD77688CCB8794E5B3BC4D8B51B1C3615C57CBA4",
+      "bytes": 1181
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-3.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-3.trace.json",
+      "sha256": "02025E9EE3244156DA083AECEC056D101A9B10D510254E6DF7801E928209A8ED",
+      "bytes": 4238
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-sources.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-sources.json",
+      "sha256": "1310BB98059355804AB853A62AE5778014BC8E9A538BEDAD2538A13EB2E3A16E",
+      "bytes": 6249
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-004.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-005.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-006.json",
+      "sha256": "BC7AB4895B6984CD03B2046DAB619FB2F2F805C94910E8AF4F3ED51008AB9E8F",
+      "bytes": 1402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-007.json",
+      "sha256": "F7A1546F7DDD4EF3FBAC60828CF64B8ADCEEA2408911EF70A220DC383071458A",
+      "bytes": 4301
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-008.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-009.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-010.json",
+      "sha256": "42596590B8680FD17F15F5236FC748830F96860EF8084D7535025873702F3471",
+      "bytes": 1198
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-011.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-011.json",
+      "sha256": "BA50B78D76F879B3B93F6D4BFF5378202231D47F072A6920EB878181CC570DBA",
+      "bytes": 4300
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-012.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-012.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-013.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-013.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-014.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-014.json",
+      "sha256": "D6432DFE76563ED23DD99C89A105A44F136D51671F79C43090BFE5AB75DBC2DA",
+      "bytes": 1222
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-015.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-015.json",
+      "sha256": "C2A2E8F6BFB186AECC5C1617C14FD6F5A92529A87356E90C3C9994E49F9F004F",
+      "bytes": 4298
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-016.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-016.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-017.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-017.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-018.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-018.json",
+      "sha256": "52F305227C46CAB6C1EFAD4C45D2CE337F1FD8D3AAF08F0C41EA9852CF84E13A",
+      "bytes": 1464
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-019.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-019.json",
+      "sha256": "80B83B446388E4F485A84909A45316E59AD190396EA99BB0A2B84ED3FCA5DFA6",
+      "bytes": 4299
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-020.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-020.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-021.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-021.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-022.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-022.json",
+      "sha256": "AB0E28E0879025ADB3B5A98EE68CA8E0215E1989BF257F6BDC679ECC4DFA3B13",
+      "bytes": 1260
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-023.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-023.json",
+      "sha256": "DD5FB2D231CF8BCCA1E8718DC3453787DC001E93A85346C394182F0534690822",
+      "bytes": 4300
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-024.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-024.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-025.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-025.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-026.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-026.json",
+      "sha256": "B1A0F9DEE941A1B16FB726654F97390A168C6969F4BBF1E9C8870B2D7BD5076C",
+      "bytes": 1040
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-027.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-027.json",
+      "sha256": "1E0EB553EA5B71ADF86932C8DF2F1B19A5C7A1285902865FACB49911445C6F75",
+      "bytes": 4182
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-028.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-028.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-029.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-029.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-030.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-030.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-1.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-1.response.json",
+      "sha256": "19AD4A8E7CF8297A21BE8F9BF30DB7E18B0FAF1FB23E0CADE3C7C611122E7767",
+      "bytes": 1313
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-1.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-1.trace.json",
+      "sha256": "85A98A01552FC25230652A12ADB622B243ED904CCF4266E4205A9E58E8C8BA8D",
+      "bytes": 4160
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-2.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-2.response.json",
+      "sha256": "7000694950F865ABF5D6BAF10AA2085AF5D32E70B411A6ACA07EBDA54A0216B4",
+      "bytes": 1113
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-2.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-2.trace.json",
+      "sha256": "CD9E266159DF0E19370D955495728D408FB612464CBC2B9E49A0207AD7138C35",
+      "bytes": 4159
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-3.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-3.response.json",
+      "sha256": "5FEEAA52ED53AB2EBB97A7E262A8A2C69907F46B54B89E9ECA566532AF29DDD6",
+      "bytes": 1137
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-3.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-3.trace.json",
+      "sha256": "AB9D8A86E4282618B7CD4F8DFB1AE0C759D17E95E4F87D1367BB00932FF0E81F",
+      "bytes": 4157
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-4.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-4.response.json",
+      "sha256": "3FCA4362C6964DFF1B0AD6526414B43127F7DAEBAD5D503CEF7F5A814B453529",
+      "bytes": 1375
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-4.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-4.trace.json",
+      "sha256": "0456299E6711463EEB82235B45A85191FEB570863462827E6FDFF7359B2B9DAC",
+      "bytes": 4158
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-5.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-5.response.json",
+      "sha256": "70989A03610A49528E522B7F73DBD11C89D3F5EB8929E8E31B528CA46A0154C3",
+      "bytes": 1173
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-5.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-5.trace.json",
+      "sha256": "D5EFA1DD5E2ABB2A0D44E6C377F20399DB2D3E04379C6B8E7925823E4A8BB5D7",
+      "bytes": 4159
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.response.json",
+      "sha256": "B06F04790F6934070623C00514062EC54A67401C619F279E927A3CDCF7CA3D93",
+      "bytes": 951
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.trace.json",
+      "sha256": "D33E17C0D55A4ED3FBC2DFF7F1D9C878F3E958434EE43FF7FEDE5D25C595A051",
+      "bytes": 4042
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-summary.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-summary.json",
+      "sha256": "094907CCB0FE8C0B459119805F3CEBA9E2F8FE8750A3F2E6D2ACB12F0DD8333F",
+      "bytes": 10474
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/assembled-prompt.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/assembled-prompt.json",
+      "sha256": "13AAB890ECF3B990D9E73C9B806A31D3AEB0E3D06A10CAA8866527D67A0F5223",
+      "bytes": 4509
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-004.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-005.json",
+      "sha256": "E5EAF234486848800BBB9548197897E5AADF376FFE3331E78635EF248B72E571",
+      "bytes": 4782
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-006.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-007.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-008.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/conversion-1.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/conversion-1.response.json",
+      "sha256": "D9DCE8F21883589A535F10BD088FAF74D4054C06922B4D1C489FF6EA1B31648C",
+      "bytes": 1358
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/conversion-1.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/conversion-1.trace.json",
+      "sha256": "AE805C4FA9F1B987FE0F0B53AA0D7D317004898A8E2A7C1060B4C04ADBE8B7D5",
+      "bytes": 3815
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-004.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-005.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-006.json",
+      "sha256": "EA7B20B0C1556041B7D18282BD6DE1A72F419A22AE2B989300A0FD39742CAD0D",
+      "bytes": 1449
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-007.json",
+      "sha256": "4D5B761DF6637032ABF64BAB0031D69C18AE1CB7B07A9F6896AB398CCB53FD40",
+      "bytes": 4101
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-008.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-009.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-010.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/tool-summary.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/tool-summary.json",
+      "sha256": "9C155963D63A6C3DC5E2223EAC5F77947E024DA550D44694209C4DE3BED64964",
+      "bytes": 153
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-004.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-005.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-006.json",
+      "sha256": "A90B6B7D37D2BF4BA0985CAF6D28CA23CA26085F67400BE3CF01F8BF46C2AACA",
+      "bytes": 873
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-007.json",
+      "sha256": "8E17131190C840029788CCF5B661D9105707F302848A2DC83B53BA750EBB41F1",
+      "bytes": 2311
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-008.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-009.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-010.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/missing-customer-1.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/missing-customer-1.response.json",
+      "sha256": "D53AFA28848AB2465EA34E6FDEFD5392D7DA761541DB7C27DFAD23832594DFC5",
+      "bytes": 793
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/missing-customer-1.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/missing-customer-1.trace.json",
+      "sha256": "284785F295D083545CA24BBBE97BE12DC5A4FB764767A74F169293CFD05A1F85",
+      "bytes": 1986
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/tool-summary.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/tool-summary.json",
+      "sha256": "9DBC5E31F455C2646879E0232B14077B2E39CC928FF01A6B10759FD50AF32DAD",
+      "bytes": 101
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-004.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-005.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-006.json",
+      "sha256": "A072DEC5820C5644A1EFBAC5293C81ED8EFCABE2B2F821882EC5F9B9C946131D",
+      "bytes": 1346
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-007.json",
+      "sha256": "BB5724E31EA49BC8DC962562E88900EE8E612FF018031183D395CAFA800A44D8",
+      "bytes": 4354
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-008.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-009.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-010.json",
+      "sha256": "A8D5C7D227E958EA0D017AF966C0F3E18C59FB8C8EAD93618C2E549CAEFFDFF4",
+      "bytes": 1082
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-011.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-011.json",
+      "sha256": "ACECDDDCE4EE7397B0C5B5135ADF80E5A3BA1C08DA1ED7B908C9297861424720",
+      "bytes": 4461
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-012.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-012.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-013.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-013.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-014.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-014.json",
+      "sha256": "40E222FDBA1E14967B04CD3DF08CBBDAFBBCA7D2AD65FE5C85D0F22E2CB0AE08",
+      "bytes": 1385
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-015.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-015.json",
+      "sha256": "C33C5F0B5A1A00BC6094DA6E4FD254685C40CA760C1368D0E8D3782557D62909",
+      "bytes": 4381
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-016.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-016.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-017.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-017.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-018.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-018.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-1.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-1.response.json",
+      "sha256": "A80C61F8A3ADD24642A593193F2FF15E899077D503F5E4C24E9C9450ACFDA2FE",
+      "bytes": 1258
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-1.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-1.trace.json",
+      "sha256": "41EE97093751D5C308A4723DFEAC2A1A751ED3212DF1ABA39053C549CEA0A1CA",
+      "bytes": 4219
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-2.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-2.response.json",
+      "sha256": "49B3ADB426A3C0C1FD239076DDE1CA624A16B53F4856197346F2716A87D91B37",
+      "bytes": 998
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-2.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-2.trace.json",
+      "sha256": "955F5431F1099A9550739DA240128CA22057828853A7DFE0FEF9B5D96EB49B31",
+      "bytes": 4325
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-3.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-3.response.json",
+      "sha256": "35111183A9C697900A67AFB0F5F67571418700A83B3879BF8ABFCE808ADB63E9",
+      "bytes": 1297
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-3.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-3.trace.json",
+      "sha256": "76467D01D3893D8B1E9E54B3A4C557516FC1EB8714E124B2AEFF54A550A4AC49",
+      "bytes": 4246
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/tool-summary.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/tool-summary.json",
+      "sha256": "61BB2AA6934474F98D94AFC2274426235D1CA41D0B10AC7688809EC3C578DAF0",
+      "bytes": 327
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-004.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-005.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-006.json",
+      "sha256": "12098A1738E4BBF01351EBCA9083C691720B3071BB3A0429EACBCD5425D63DD4",
+      "bytes": 1577
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-007.json",
+      "sha256": "6BE821BDC3A4942373EE5CFC9E9799AA840F9881F815B6536236CF3CA2EEBD6F",
+      "bytes": 5077
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-008.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-009.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-010.json",
+      "sha256": "F8DDA9AC54E7F3658A6502EF2771FEBD8ABD43491A80802CC74BE70FB3AEC021",
+      "bytes": 1781
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-011.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-011.json",
+      "sha256": "4394B963A010E691CC234CC5DB11AB9FB9FCCB545C5B09C2BF47907612CF3E06",
+      "bytes": 4712
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-012.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-012.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-013.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-013.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-014.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-014.json",
+      "sha256": "3AC83EE14C948369E30A4E7AB94CA322E66290482A8CD986B68CC7293978965C",
+      "bytes": 1476
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-015.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-015.json",
+      "sha256": "18198716BAA29F4C90122C69D80C23CE04BA5548BE153942111EB10F0E8C2056",
+      "bytes": 5064
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-016.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-016.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-017.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-017.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-018.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-018.json",
+      "sha256": "AEE990E7D2C705DB6121CB647A61B0F8CB6A2D066856A09BDCFD3DE94B08830E",
+      "bytes": 1222
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-019.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-019.json",
+      "sha256": "A14B53A2D4CB2675FE5EA79806F2073974E542E36226E2728830A9595F04C836",
+      "bytes": 5033
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-020.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-020.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-021.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-021.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-022.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-022.json",
+      "sha256": "99290BABE4665969BC7EEA4EE5E5E0246536BA4E518C7BFC8C1D0286321AA1E9",
+      "bytes": 1161
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-023.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-023.json",
+      "sha256": "1C8DD7664727C9C920058A88E651CDC5E32C0FEF3E3D6E11F31F2CBE418A1488",
+      "bytes": 5065
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-024.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-024.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-025.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-025.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-026.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-026.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-1.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-1.response.json",
+      "sha256": "4676029513ACA05D304BCE8AE9555B94EDBD5F98B2400D5C98F851C4147DFF9B",
+      "bytes": 1485
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-1.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-1.trace.json",
+      "sha256": "C52F205687722D8998BD8F9A632CCA56A35076FB2736AEA901B32DB3A7892855",
+      "bytes": 4970
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-2.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-2.response.json",
+      "sha256": "B16FFB3B8A7902C1407AB43C69CF89FA77B5089DE36646E44926536FB6FC5A51",
+      "bytes": 1688
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-2.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-2.trace.json",
+      "sha256": "71007FB3624502FB04F91130F3F7D461431B87DB8118C410DE10C622344740DC",
+      "bytes": 4563
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-3.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-3.response.json",
+      "sha256": "27AA68B8A6AEA18768D59746EFA67992E49C503654625A4A6E5066B30E94170F",
+      "bytes": 1388
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-3.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-3.trace.json",
+      "sha256": "5070CB451EEF250978A77CC15CAE45A7E853A7B4500062387302F4A0210D3614",
+      "bytes": 4957
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-4.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-4.response.json",
+      "sha256": "502DC1139F62C55140510F4ACFE34DE357CB09C06A87285674C0C3827BCE909A",
+      "bytes": 1134
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-4.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-4.trace.json",
+      "sha256": "34067855A1C3EFD17B7665170C5372A44146B898E42BF85AA1C10FC6268F04A5",
+      "bytes": 4926
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-5.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-5.response.json",
+      "sha256": "8F921A0D6E67B95E769042712BB30EA05E980295C52A84AC659F01FF72B292D6",
+      "bytes": 1074
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-5.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-5.trace.json",
+      "sha256": "DD77ADC86F7F8EFA2165F8896F73CAC4E6BDD5021455953521F81C976152C5FC",
+      "bytes": 4958
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/tool-summary.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/tool-summary.json",
+      "sha256": "7DE95ED081C83C669752209AEA7AC500BC7489E8D4C6F35F3B003CFF4F960EDA",
+      "bytes": 651
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-004.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-005.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-006.json",
+      "sha256": "FB50142055A03884C9320E8296EFA3C680BB9F5BBDF53DE83F0D42E3EB2D1481",
+      "bytes": 946
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-007.json",
+      "sha256": "20ADE507CDC3D0B0FD67BA6A806AD3020B4997242DA2D8FD4BF5BE902A61B303",
+      "bytes": 4084
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-008.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-009.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-010.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/tool-summary.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/tool-summary.json",
+      "sha256": "6A6A7DF345D737344806B4B6E8AEAF7B82DF97AF03F8205BF994E001198AD356",
+      "bytes": 133
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/transactions-1.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/transactions-1.response.json",
+      "sha256": "E4B939BEBEEF61115BDF1B8278153CF8408F21DE3C61E8780191A77392F7C63C",
+      "bytes": 860
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/transactions-1.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/transactions-1.trace.json",
+      "sha256": "703EFB845A6EDA899EED33F93FA45F76503FFB09FEEB3DC98AF3B578FEFC5313",
+      "bytes": 3824
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/clean-swift-quality.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/clean-swift-quality.response.json",
+      "sha256": "480AD0E54E08C4D8CBBF14117C7E55EFFA7767F91547851EC7F7D19061170FD3",
+      "bytes": 931
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/clean-swift-quality.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/clean-swift-quality.trace.json",
+      "sha256": "60238BC2A0ACB2B3E9FDE07F9E52277BDDF271D74BFD0D36FEDF52E5B468B0E1",
+      "bytes": 4041
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-004.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-005.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-006.json",
+      "sha256": "7BFEF588597CFF646F8CEE4E276B0D823C54D3B448477A3072BD80219986882D",
+      "bytes": 1020
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-007.json",
+      "sha256": "F3F135347D7F5567B8CBC2412942841F7102B9C03D21D68D1A1F0314B02A6EAF",
+      "bytes": 4181
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-008.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-009.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-010.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-001.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-001.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-002.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-002.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-003.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-003.json",
+      "sha256": "FF2326473F718F7CED5264363E3004DBB98D0F57AAEB21723626C41A56D60178",
+      "bytes": 351
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-004.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-004.json",
+      "sha256": "08B3B1BEF858C6C299ACC062F94D097452F3394DB108FDE7361CDC2988EADF18",
+      "bytes": 1289
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-005.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-005.json",
+      "sha256": "E3FC4745DB4D4E832FC8A75EE5ED044D56AC1CE12255FE64F9B6EED99F618868",
+      "bytes": 402
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-006.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-006.json",
+      "sha256": "35B4FA56FDF20DF3980AD03AD267B527B7F51406BBF863BDEBD39F784845D070",
+      "bytes": 1154
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-007.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-007.json",
+      "sha256": "C6798558B62DBD19A9BDF5E0088FE78BD05EE1803DA4FC4A38440B472C325DF9",
+      "bytes": 4353
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-008.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-008.json",
+      "sha256": "43D3685E7327CDADB1E948AB1DF37FC19B2C02A16423C9BDCCE1FA0E53568FC9",
+      "bytes": 1131
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-009.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-009.json",
+      "sha256": "90A9815D2366090198419931EC4E9D3A14AF10EA9A4499C1FAB0799315E96282",
+      "bytes": 1126
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-010.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-010.json",
+      "sha256": "410E71302F67A977A67529608970DFFE21A07B84F9A936622EF632A835992073",
+      "bytes": 1105
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/restored-profile.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/restored-profile.json",
+      "sha256": "5AADC18DF7327F11835BFD6FB213BC08E4B82B3688FD02E302D4E8524D8E862A",
+      "bytes": 754
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/unknown-product-quality.response.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/unknown-product-quality.response.json",
+      "sha256": "46FF9402FFF544A0B255A1D0B7D9813790BD9D3311A9836BE2F4F30C62400235",
+      "bytes": 1068
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/unknown-product-quality.trace.json",
+      "archive_relative_path": "evidence/api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/unknown-product-quality.trace.json",
+      "sha256": "99E98B75E9B090013E756ABD7687E75E8368665D4083FF95C1966EF45D3E65D4",
+      "bytes": 4218
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "Results/baseline.trx",
+      "archive_relative_path": "evidence/api-run/Results/baseline.trx",
+      "sha256": "ECD80BE2504E10E0BFBEFC12E1335D5B804E944B1CBD59392178C0F4FF09E1B2",
+      "bytes": 48773
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "Results/quality.trx",
+      "archive_relative_path": "evidence/api-run/Results/quality.trx",
+      "sha256": "E1C6B30E1E2A148AB4C6AFF6D16366C7FEB288C02C5003EB9730493A658EA2C0",
+      "bytes": 8688
+    },
+    {
+      "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+      "source_relative_path": "Results/targeted.trx",
+      "archive_relative_path": "evidence/api-run/Results/targeted.trx",
+      "sha256": "5E4C1FA36ECAD5FF2A1CB64F8D3C9E79C915D293980D68EA84242EEC75859397",
+      "bytes": 28849
+    }
+  ],
+  "created_utc": "2026-09-29T21:22:46.4727147Z"
+}

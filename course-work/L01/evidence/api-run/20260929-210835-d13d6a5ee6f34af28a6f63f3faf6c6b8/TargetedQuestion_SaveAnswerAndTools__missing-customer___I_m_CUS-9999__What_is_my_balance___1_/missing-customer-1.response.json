@@ -1,0 +1,17 @@
+{
+  "profile": "lesson-01",
+  "question": "I\u0027m CUS-9999. What is my balance?",
+  "session_id": "csharp-l01-e0e856629fb745d8aff514f536c09514",
+  "started_utc": "2026-09-29T21:08:44.4940862+00:00",
+  "response": {
+    "session_id": "csharp-l01-e0e856629fb745d8aff514f536c09514",
+    "request_id": "0542696cb50f4ef7",
+    "answer": "I\u0027m sorry, but I wasn\u0027t able to find any accounts associated with customer ID CUS-9999. \n\nCould you please double-check your customer ID? It should be in the format CUS-#### (like CUS-0001). Once you confirm the correct ID, I\u0027ll be happy to look up your balance and account details right away.",
+    "step_number": 1,
+    "elapsed_ms": 2408.7,
+    "usage": {
+      "input_tokens": 4848,
+      "output_tokens": 147
+    }
+  }
+}

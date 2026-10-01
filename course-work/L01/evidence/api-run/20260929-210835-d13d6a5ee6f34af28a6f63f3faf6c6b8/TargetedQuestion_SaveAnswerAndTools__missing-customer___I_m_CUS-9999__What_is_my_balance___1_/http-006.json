@@ -1,0 +1,11 @@
+{
+  "method": "Post",
+  "resource": "chat",
+  "request_body": {
+    "session_id": "csharp-l01-e0e856629fb745d8aff514f536c09514",
+    "message": "I\u0027m CUS-9999. What is my balance?"
+  },
+  "status_code": 200,
+  "raw_response": "{\u0022session_id\u0022:\u0022csharp-l01-e0e856629fb745d8aff514f536c09514\u0022,\u0022request_id\u0022:\u00220542696cb50f4ef7\u0022,\u0022answer\u0022:\u0022I\u0027m sorry, but I wasn\u0027t able to find any accounts associated with customer ID CUS-9999. \\n\\nCould you please double-check your customer ID? It should be in the format CUS-#### (like CUS-0001). Once you confirm the correct ID, I\u0027ll be happy to look up your balance and account details right away.\u0022,\u0022step_number\u0022:1,\u0022elapsed_ms\u0022:2408.7,\u0022usage\u0022:{\u0022input_tokens\u0022:4848,\u0022output_tokens\u0022:147}}",
+  "error": null
+}

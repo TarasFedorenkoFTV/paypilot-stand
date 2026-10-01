@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="8f3fcb74-46d5-41aa-9c73-6d74b80753ea" name="olshe@ROMANS-PC 2026-09-30 00:13:25" runUser="ROMANS-PC\olshe" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-30T00:13:26.0074344+03:00" queuing="2026-09-30T00:13:26.0074348+03:00" start="2026-09-30T00:13:21.1776210+03:00" finish="2026-09-30T00:13:28.9052935+03:00" />
+  <TestSettings name="default" id="664b22e9-cf39-4ee6-90f8-0215292079a5">
+    <Deployment runDeploymentRoot="olshe_ROMANS-PC_2026-09-30_00_13_25" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="9605ee89-45f8-4483-8d43-b0c6d562eae8" testId="ed149eb3-6f11-5ef1-84e3-6c908d2cc575" testName="Clean_Swift_ContainsPublishedFeeComponents" computerName="ROMANS-PC" duration="00:00:03.1633110" startTime="2026-09-30T00:13:22.7925157+03:00" endTime="2026-09-30T00:13:25.9557603+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9605ee89-45f8-4483-8d43-b0c6d562eae8">
+      <ResultFiles>
+        <ResultFile path="ROMANS-PC\clean-swift-quality.response.json" />
+        <ResultFile path="ROMANS-PC\clean-swift-quality.trace.json" />
+        <ResultFile path="ROMANS-PC\http-001.json" />
+        <ResultFile path="ROMANS-PC\http-002.json" />
+        <ResultFile path="ROMANS-PC\http-003.json" />
+        <ResultFile path="ROMANS-PC\http-004.json" />
+        <ResultFile path="ROMANS-PC\http-005.json" />
+        <ResultFile path="ROMANS-PC\http-006.json" />
+        <ResultFile path="ROMANS-PC\http-007.json" />
+        <ResultFile path="ROMANS-PC\http-008.json" />
+        <ResultFile path="ROMANS-PC\http-009.json" />
+        <ResultFile path="ROMANS-PC\http-010.json" />
+        <ResultFile path="ROMANS-PC\restored-profile.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="6bba7762-21f0-4b11-9f1b-113b2436bde4" testId="f3b722c8-78b9-debd-d92a-ffed737d8627" testName="Lesson01_UnknownProduct_MustNotQuoteInterestRate" computerName="ROMANS-PC" duration="00:00:02.8545800" startTime="2026-09-30T00:13:25.9569279+03:00" endTime="2026-09-30T00:13:28.8115072+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6bba7762-21f0-4b11-9f1b-113b2436bde4">
+      <Output>
+        <ErrorInfo>
+          <Message>  Moon Platinum is absent from the approved course corpus. Inspect the answer and synthetic#kb trace.&#xD;
+Assert.That(Regex.IsMatch(run.Answer, @"\d+(?:[.,]\d+)?\s*%"), Is.False)&#xD;
+  Expected: False&#xD;
+  But was:  True&#xD;
+</Message>
+          <StackTrace>   at PayPilot.ApiTests.Tests.L01QualityTests.Lesson01_UnknownProduct_MustNotQuoteInterestRate() in D:\neoversity\paypilot-stand\tests\PayPilot.ApiTests\Tests\L01QualityTests.cs:line 40&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+
+1)    at PayPilot.ApiTests.Tests.L01QualityTests.Lesson01_UnknownProduct_MustNotQuoteInterestRate() in D:\neoversity\paypilot-stand\tests\PayPilot.ApiTests\Tests\L01QualityTests.cs:line 40&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="ROMANS-PC\http-001.json" />
+        <ResultFile path="ROMANS-PC\http-002.json" />
+        <ResultFile path="ROMANS-PC\http-003.json" />
+        <ResultFile path="ROMANS-PC\http-004.json" />
+        <ResultFile path="ROMANS-PC\http-005.json" />
+        <ResultFile path="ROMANS-PC\http-006.json" />
+        <ResultFile path="ROMANS-PC\http-007.json" />
+        <ResultFile path="ROMANS-PC\http-008.json" />
+        <ResultFile path="ROMANS-PC\http-009.json" />
+        <ResultFile path="ROMANS-PC\http-010.json" />
+        <ResultFile path="ROMANS-PC\restored-profile.json" />
+        <ResultFile path="ROMANS-PC\unknown-product-quality.response.json" />
+        <ResultFile path="ROMANS-PC\unknown-product-quality.trace.json" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Lesson01_UnknownProduct_MustNotQuoteInterestRate" storage="d:\neoversity\paypilot-stand\tests\paypilot.apitests\bin\debug\net6.0\paypilot.apitests.dll" id="f3b722c8-78b9-debd-d92a-ffed737d8627">
+      <Execution id="6bba7762-21f0-4b11-9f1b-113b2436bde4" />
+      <TestMethod codeBase="D:\neoversity\paypilot-stand\tests\PayPilot.ApiTests\bin\Debug\net6.0\PayPilot.ApiTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="PayPilot.ApiTests.Tests.L01QualityTests" name="Lesson01_UnknownProduct_MustNotQuoteInterestRate" />
+    </UnitTest>
+    <UnitTest name="Clean_Swift_ContainsPublishedFeeComponents" storage="d:\neoversity\paypilot-stand\tests\paypilot.apitests\bin\debug\net6.0\paypilot.apitests.dll" id="ed149eb3-6f11-5ef1-84e3-6c908d2cc575">
+      <Execution id="9605ee89-45f8-4483-8d43-b0c6d562eae8" />
+      <TestMethod codeBase="D:\neoversity\paypilot-stand\tests\PayPilot.ApiTests\bin\Debug\net6.0\PayPilot.ApiTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="PayPilot.ApiTests.Tests.L01QualityTests" name="Clean_Swift_ContainsPublishedFeeComponents" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ed149eb3-6f11-5ef1-84e3-6c908d2cc575" executionId="9605ee89-45f8-4483-8d43-b0c6d562eae8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3b722c8-78b9-debd-d92a-ffed737d8627" executionId="6bba7762-21f0-4b11-9f1b-113b2436bde4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started&#xD;
+Running selected tests in D:\neoversity\paypilot-stand\tests\PayPilot.ApiTests\bin\Debug\net6.0\PayPilot.ApiTests.dll&#xD;
+   NUnit3TestExecutor discovered 2 of 2 NUnit test cases using Current Discovery mode, Explicit run&#xD;
+Evidence: D:\neoversity\paypilot-stand\tests\PayPilot.ApiTests\Artifacts\l01-rebuild-5109f05428d545d1b9d5b8a8568884b7\20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0\Clean_Swift_ContainsPublishedFeeComponents&#xD;
+&#xD;
+&gt;&gt;&gt; clean-swift-quality | profile=clean | session=csharp-l01-414dfdfdcc1e47d69de52af59a3e0e6d&#xD;
+I'm CUS-0008. What is the fee for a SWIFT transfer at Verta?&#xD;
+&#xD;
+&lt;&lt;&lt; request_id=58275d93d7b046f5&#xD;
+The SWIFT transfer fee at Verta is composed of two parts:&#xD;
+&#xD;
+- **Flat fee:** EUR 15.00&#xD;
+- **Percentage fee:** 0.3% of the EUR equivalent of the transfer amount&#xD;
+&#xD;
+So the total cost is EUR 15.00 plus 0.3% of whatever you send. Note that correspondent bank charges deducted en route are outside Verta's control and are not refunded.&#xD;
+&#xD;
+Is there a specific transfer amount you'd like me to calculate the total fee for?&#xD;
+&#xD;
+Evidence: D:\neoversity\paypilot-stand\tests\PayPilot.ApiTests\Artifacts\l01-rebuild-5109f05428d545d1b9d5b8a8568884b7\20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0\Lesson01_UnknownProduct_MustNotQuoteInterestRate&#xD;
+&#xD;
+&gt;&gt;&gt; unknown-product-quality | profile=lesson-01 | session=csharp-l01-01bc3eab72804a678499a347ca988a1d&#xD;
+I'm CUS-0001. What is the interest rate, minimum deposit and withdrawal policy of Verta Moon Platinum savings?&#xD;
+&#xD;
+&lt;&lt;&lt; request_id=e044632d345f4ab2&#xD;
+Perfect! Here are the details for **Verta Moon Platinum savings**:&#xD;
+&#xD;
+- **Annual interest rate:** 4.5%&#xD;
+- **Minimum opening deposit:** EUR 100&#xD;
+- **Withdrawal policy:** Free monthly withdrawals with no lock-up period&#xD;
+&#xD;
+This is a flexible savings account designed to help your money grow while keeping access straightforward. You're welcome to make withdrawals whenever you need them each month without any restrictions or penalties.&#xD;
+&#xD;
+Is there anything else you'd like to know about this account?&#xD;
+&#xD;
+NUnit Adapter 4.6.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

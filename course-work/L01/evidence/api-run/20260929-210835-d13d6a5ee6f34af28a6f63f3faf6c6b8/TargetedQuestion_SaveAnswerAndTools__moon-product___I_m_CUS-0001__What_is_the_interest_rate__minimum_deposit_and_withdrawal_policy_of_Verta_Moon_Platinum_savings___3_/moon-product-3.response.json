@@ -1,0 +1,17 @@
+{
+  "profile": "lesson-01",
+  "question": "I\u0027m CUS-0001. What is the interest rate, minimum deposit and withdrawal policy of Verta Moon Platinum savings?",
+  "session_id": "csharp-l01-0407149a0d1349dd9dfe1e3eba4cb8c5",
+  "started_utc": "2026-09-29T21:08:52.7955487+00:00",
+  "response": {
+    "session_id": "csharp-l01-0407149a0d1349dd9dfe1e3eba4cb8c5",
+    "request_id": "35bcd002d57744f8",
+    "answer": "Perfect! I\u0027m delighted to tell you about **Verta Moon Platinum savings**. This is a wonderful product designed for customers who want to grow their savings with competitive returns.\n\nHere are the key terms:\n\n- **Interest rate:** 4.5% annual rate\n- **Minimum deposit:** EUR 100 to open your account\n- **Withdrawal policy:** You enjoy free monthly withdrawals with no lock-up period, giving you full flexibility to access your funds whenever you need them\n\nThis means your savings work hard for you while remaining completely accessible. There\u0027s no waiting period or penalty \u2014 you\u0027re in control.\n\nIs there anything else you\u0027d like to know about Moon Platinum or any other aspect of your accounts with us?",
+    "step_number": 1,
+    "elapsed_ms": 3339.3,
+    "usage": {
+      "input_tokens": 5242,
+      "output_tokens": 244
+    }
+  }
+}

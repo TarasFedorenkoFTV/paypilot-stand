@@ -1,0 +1,10 @@
+{
+  "method": "Put",
+  "resource": "api/_test/profile",
+  "request_body": {
+    "profile": "lesson-01"
+  },
+  "status_code": 200,
+  "raw_response": "{\u0022profile\u0022:\u0022lesson-01\u0022,\u0022known_profiles\u0022:[\u0022clean\u0022,\u0022lesson-01\u0022,\u0022lesson-02\u0022,\u0022lesson-03\u0022,\u0022lesson-04\u0022,\u0022lesson-05\u0022,\u0022lesson-06\u0022,\u0022lesson-07\u0022,\u0022lesson-08\u0022,\u0022lesson-09\u0022,\u0022lesson-10\u0022,\u0022lesson-11\u0022,\u0022lesson-12\u0022,\u0022lesson-13\u0022,\u0022lesson-14\u0022],\u0022all_defects\u0022:[\u0022D01\u0022,\u0022D02\u0022,\u0022D03\u0022,\u0022D04\u0022,\u0022D05\u0022,\u0022D06\u0022,\u0022D07\u0022,\u0022D08\u0022,\u0022D09\u0022,\u0022D10\u0022,\u0022D11\u0022,\u0022D12\u0022,\u0022D13\u0022,\u0022D14\u0022,\u0022D15\u0022,\u0022D16\u0022,\u0022D17\u0022,\u0022D18\u0022,\u0022D19\u0022,\u0022D20\u0022,\u0022D21\u0022,\u0022D22\u0022,\u0022D23\u0022,\u0022D24\u0022,\u0022D25\u0022,\u0022D26\u0022,\u0022D27\u0022],\u0022profile_defects\u0022:[\u0022D01\u0022,\u0022D02\u0022,\u0022D03\u0022],\u0022extra_defects\u0022:[],\u0022active\u0022:[\u0022D01\u0022,\u0022D02\u0022,\u0022D03\u0022],\u0022details\u0022:{\u0022D01\u0022:{},\u0022D02\u0022:{},\u0022D03\u0022:{}}}",
+  "error": null
+}

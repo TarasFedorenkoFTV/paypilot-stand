@@ -1,0 +1,162 @@
+{
+  "results": [
+    {
+      "RequestId": "be2a058a39fd4f05",
+      "category": "No recognized published fee figure \u2014 review redirect/components/refusal",
+      "Answer": "For a SWIFT transfer at Verta, the fee is structured as follows:\n\n**Flat fee:** A fixed component on every transfer\n\n**Percentage fee:** A variable component calculated on the amount you\u0027re sending (in EUR equivalent)\n\nThe total fee combines both of these components. As an example structure: you\u0027d pay the fixed flat amount regardless of size, then a small percentage on top of what you\u0027re transferring.\n\nAdditionally, please note that correspondent banks may deduct their own charges along the transfer route, and these are outside Verta\u0027s control and are not refunded by us.\n\nIf you\u0027re planning a specific transfer and would like to know the exact total cost, I\u0027d be happy to help you calculate it if you let me know the amount and currency you\u0027re sending."
+    },
+    {
+      "RequestId": "90f713a604574786",
+      "category": "No recognized published fee figure \u2014 review redirect/components/refusal",
+      "Answer": "Thank you for asking! A SWIFT transfer at Verta consists of two components:\n\n1. **Flat fee**: A fixed amount per transfer\n2. **Percentage fee**: Calculated on the EUR equivalent of the amount you\u0027re sending\n\nThe exact total will depend on the size of your transfer. Correspondent bank charges that may be deducted along the way are handled by the receiving bank and fall outside Verta\u0027s control\u2014we cannot refund those.\n\nIs there a specific transfer amount you\u0027d like to understand the cost for? I\u0027m happy to walk through how it would work for your particular transaction."
+    },
+    {
+      "RequestId": "ce6ce98aa1ce47ed",
+      "category": "No recognized published fee figure \u2014 review redirect/components/refusal",
+      "Answer": "Thank you for asking! At Verta, a SWIFT transfer consists of two components:\n\n1. **A flat fee** \u2014 charged per transfer\n2. **A percentage fee** \u2014 calculated on the EUR equivalent of the amount you send\n\nThe exact total you\u0027ll pay depends on the size of your transfer. Additionally, correspondent banks may deduct their own charges along the way, which fall outside Verta\u0027s control and are not refunded.\n\nWhen you\u0027re ready to make a specific SWIFT transfer, I\u0027m happy to walk you through the exact breakdown for your amount. Would you like to know the fee structure for a particular transfer?"
+    },
+    {
+      "RequestId": "b2de5c7652814a6e",
+      "category": "No recognized published fee figure \u2014 review redirect/components/refusal",
+      "Answer": "Thank you for asking! SWIFT transfers at Verta are straightforward to understand.\n\nA SWIFT transfer consists of two components:\n\n1. **Flat fee**: A fixed amount per transfer\n2. **Percentage fee**: A small percentage of the amount you\u0027re sending (calculated on the EUR equivalent)\n\nThe total cost is the sum of both. For example, if you\u0027re sending a larger amount, the percentage element becomes more significant, while smaller transfers are dominated by the flat fee.\n\nIt\u0027s also worth knowing that correspondent banks along the transfer route may deduct their own charges, which are outside Verta\u0027s control and cannot be refunded \u2014 this is standard practice in international banking.\n\nIs there a specific transfer amount you\u0027d like me to help you with, or would you like to understand how this would work for your situation?"
+    },
+    {
+      "RequestId": "0dca685b7eaa4b71",
+      "category": "No recognized published fee figure \u2014 review redirect/components/refusal",
+      "Answer": "Thank you for asking! At Verta, a SWIFT transfer consists of two components:\n\n1. **A flat fee** that applies to every SWIFT transfer\n2. **A percentage fee** calculated on the EUR equivalent of the amount you\u0027re sending\n\nThe percentage is applied to ensure consistency across different currencies.\n\nAdditionally, it\u0027s important to note that correspondent banks along the transfer route may deduct their own charges, which are outside Verta\u0027s control and cannot be refunded.\n\nIs there a specific SWIFT transfer you\u0027re planning? I\u0027d be happy to help you understand the full cost or explore other transfer options if you\u0027d like."
+    }
+  ],
+  "control": {
+    "Profile": "clean",
+    "Question": "I\u0027m CUS-0008. What is the fee for a SWIFT transfer at Verta?",
+    "SessionId": "csharp-l01-fb60658998624d3a890c55fb823ec826",
+    "RequestId": "8256cde7bd034a65",
+    "Answer": "For a SWIFT transfer at Verta, the fee structure is:\n\n- **Flat fee:** EUR 15.00\n- **Percentage fee:** 0.3% of the EUR equivalent of the transfer amount\n\nThe percentage is calculated on the EUR equivalent of whatever currency you are sending. Please note that correspondent bank charges deducted en route are outside Verta\u0027s control and are not refunded.\n\nIs there a specific SWIFT transfer amount you\u0027d like me to help you with?",
+    "Response": {
+      "session_id": "csharp-l01-fb60658998624d3a890c55fb823ec826",
+      "request_id": "8256cde7bd034a65",
+      "answer": "For a SWIFT transfer at Verta, the fee structure is:\n\n- **Flat fee:** EUR 15.00\n- **Percentage fee:** 0.3% of the EUR equivalent of the transfer amount\n\nThe percentage is calculated on the EUR equivalent of whatever currency you are sending. Please note that correspondent bank charges deducted en route are outside Verta\u0027s control and are not refunded.\n\nIs there a specific SWIFT transfer amount you\u0027d like me to help you with?",
+      "step_number": 1,
+      "elapsed_ms": 2779.6,
+      "usage": {
+        "input_tokens": 4868,
+        "output_tokens": 182
+      }
+    },
+    "Trace": {
+      "request_id": "8256cde7bd034a65",
+      "name": "agent.request",
+      "span_id": "9f4c4ae2e72a4e34",
+      "started_at": 1790716014.3576388,
+      "ended_at": 1790716017.1372323,
+      "duration_ms": 2779.6,
+      "attributes": {
+        "session.id": "csharp-l01-fb60658998624d3a890c55fb823ec826",
+        "dialog.step_number": 1,
+        "run.profile": "clean",
+        "run.active_defects": [],
+        "prompt.version": "base.v1",
+        "llm.provider": "anthropic",
+        "context.replay_active": false,
+        "gen_ai.usage.total_input_tokens": 4868,
+        "gen_ai.usage.total_output_tokens": 182
+      },
+      "children": [
+        {
+          "name": "llm.call",
+          "span_id": "c7711ab113ff4055",
+          "started_at": 1790716014.3578606,
+          "ended_at": 1790716015.4827437,
+          "duration_ms": 1124.9,
+          "attributes": {
+            "agent.loop_step": 0,
+            "gen_ai.request.model": "claude-haiku-4-5-20251001",
+            "gen_ai.usage.input_tokens": 2178,
+            "gen_ai.usage.output_tokens": 74
+          },
+          "children": []
+        },
+        {
+          "name": "tool.search_knowledge_base",
+          "span_id": "a3db2a71d67f4375",
+          "started_at": 1790716015.4827955,
+          "ended_at": 1790716015.4834645,
+          "duration_ms": 0.7,
+          "attributes": {
+            "tool.name": "search_knowledge_base",
+            "tool.arguments": {
+              "query": "SWIFT transfer fee"
+            },
+            "tool.result": {
+              "index": "kb_clean",
+              "top_k": 4,
+              "query": "SWIFT transfer fee",
+              "fragments": [
+                {
+                  "id": "tariffs.md#s3",
+                  "doc": "tariffs.md",
+                  "score": 1.0,
+                  "text": "Verta tariff schedule\n## Transfer fees by type\n| Transfer type | Flat fee | Percentage fee |\n|---|---|---|\n| Internal | EUR 0.00 | 0% |\n| SEPA | EUR 0.35 | 0% |\n| SWIFT | EUR 15.00 | 0.3% |\n| Card payment | EUR 0.00 | 1.2% |\n\nThe percentage fee is calculated on the EUR equivalent of the transfer amount."
+                },
+                {
+                  "id": "fees-detail.md#s1",
+                  "doc": "fees-detail.md",
+                  "score": 0.9258,
+                  "text": "Fee details\n## How the SWIFT fee is composed\nA SWIFT transfer carries a flat fee plus a percentage of the EUR equivalent of\nthe amount sent. Correspondent bank charges deducted en route are outside the\ncontrol of Verta and are not refunded."
+                },
+                {
+                  "id": "fees-detail.md#s2",
+                  "doc": "fees-detail.md",
+                  "score": 0.9177,
+                  "text": "Fee details\n## Card payment fee\nCard payments carry a percentage fee on the EUR equivalent. No flat fee\napplies."
+                },
+                {
+                  "id": "transfers.md#s4",
+                  "doc": "transfers.md",
+                  "score": 0.5774,
+                  "text": "Transfers\n## Failed transfers\nA transfer rejected by the beneficiary bank is returned within five business\ndays. Fees already charged on a returned SWIFT transfer are not refunded."
+                }
+              ]
+            },
+            "retrieval.query": "SWIFT transfer fee",
+            "retrieval.index": "kb_clean",
+            "retrieval.fragments": [
+              {
+                "id": "tariffs.md#s3",
+                "score": 1.0
+              },
+              {
+                "id": "fees-detail.md#s1",
+                "score": 0.9258
+              },
+              {
+                "id": "fees-detail.md#s2",
+                "score": 0.9177
+              },
+              {
+                "id": "transfers.md#s4",
+                "score": 0.5774
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "name": "llm.call",
+          "span_id": "926767f4cd864874",
+          "started_at": 1790716015.483579,
+          "ended_at": 1790716017.1372209,
+          "duration_ms": 1653.6,
+          "attributes": {
+            "agent.loop_step": 1,
+            "gen_ai.request.model": "claude-haiku-4-5-20251001",
+            "gen_ai.usage.input_tokens": 2690,
+            "gen_ai.usage.output_tokens": 108
+          },
+          "children": []
+        }
+      ]
+    }
+  },
+  "note": "Labels are heuristics, not an LLM quality verdict."
+}

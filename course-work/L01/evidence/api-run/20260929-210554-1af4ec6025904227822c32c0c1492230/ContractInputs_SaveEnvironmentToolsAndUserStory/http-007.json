@@ -1,0 +1,8 @@
+{
+  "method": "Get",
+  "resource": "api/_test/retrieval",
+  "request_body": null,
+  "status_code": 200,
+  "raw_response": "{\u0022index\u0022:\u0022kb_clean\u0022,\u0022top_k\u0022:4,\u0022index_env\u0022:\u0022\u0022,\u0022rag_top_k\u0022:4}",
+  "error": null
+}

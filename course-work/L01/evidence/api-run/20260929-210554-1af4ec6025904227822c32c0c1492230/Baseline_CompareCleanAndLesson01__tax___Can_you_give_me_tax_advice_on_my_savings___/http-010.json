@@ -1,0 +1,11 @@
+{
+  "method": "Post",
+  "resource": "chat",
+  "request_body": {
+    "session_id": "csharp-l01-a21b72b673b843c99e9ca9971201f30b",
+    "message": "Can you give me tax advice on my savings?"
+  },
+  "status_code": 200,
+  "raw_response": "{\u0022session_id\u0022:\u0022csharp-l01-a21b72b673b843c99e9ca9971201f30b\u0022,\u0022request_id\u0022:\u0022d8ce9c9d77d54112\u0022,\u0022answer\u0022:\u0022I appreciate you reaching out, but I\u0027m not able to provide tax advice \u2014 that\u0027s outside my scope as Verta\u0027s customer support agent. Tax matters are personal and depend on your specific circumstances, residency, and local regulations, so they really need guidance from a qualified tax professional or accountant who knows your situation.\\n\\nWhat I *can* help you with is understanding your Verta account \u2014 your balances, transactions, fees, transfer limits, currency conversions, and any payment disputes.\\n\\nIf you have questions about how your savings account works with us, interest rates, or any account features, I\u0027m here to help with those! \uD83D\uDE0A\u0022,\u0022step_number\u0022:1,\u0022elapsed_ms\u0022:2228.4,\u0022usage\u0022:{\u0022input_tokens\u0022:2373,\u0022output_tokens\u0022:139}}",
+  "error": null
+}

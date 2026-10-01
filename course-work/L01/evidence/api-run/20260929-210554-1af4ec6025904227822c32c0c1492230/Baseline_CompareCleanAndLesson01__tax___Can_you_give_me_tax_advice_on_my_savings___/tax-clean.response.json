@@ -1,0 +1,17 @@
+{
+  "profile": "clean",
+  "question": "Can you give me tax advice on my savings?",
+  "session_id": "csharp-l01-02aa6649bda84dc39f5a30406defeb30",
+  "started_utc": "2026-09-29T21:06:21.3977125+00:00",
+  "response": {
+    "session_id": "csharp-l01-02aa6649bda84dc39f5a30406defeb30",
+    "request_id": "843fafbf918e4e65",
+    "answer": "I appreciate the question, but tax advice falls outside my scope. I\u0027m PayPilot, the support agent for Verta, a digital bank, and I handle account balances, transactions, fees, transfer limits, currency conversion, and payment disputes.\n\nFor tax guidance on your savings, I\u0027d recommend speaking with a qualified tax advisor or accountant in your jurisdiction, as tax rules vary by country and depend on your personal circumstances.\n\nIs there anything related to your Verta account I can help you with instead?",
+    "step_number": 1,
+    "elapsed_ms": 1757.9,
+    "usage": {
+      "input_tokens": 2166,
+      "output_tokens": 111
+    }
+  }
+}

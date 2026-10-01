@@ -1,0 +1,17 @@
+{
+  "profile": "lesson-01",
+  "question": "I\u0027m CUS-0001. I lost my card, what should I do?",
+  "session_id": "csharp-l01-86b4cde5dd60443393d4d51c6a9df90f",
+  "started_utc": "2026-09-29T21:06:12.1409186+00:00",
+  "response": {
+    "session_id": "csharp-l01-86b4cde5dd60443393d4d51c6a9df90f",
+    "request_id": "2968fc5b04ca4c87",
+    "answer": "Perfect \u2014 I\u0027ve escalated your case (ID: **2**). A human agent will contact you shortly to secure your card and get you sorted with a replacement.\n\nIn the meantime, if you notice any unauthorized transactions on your account, please let me know and I can help you dispute them. Stay safe!",
+    "step_number": 1,
+    "elapsed_ms": 4503.0,
+    "usage": {
+      "input_tokens": 5003,
+      "output_tokens": 281
+    }
+  }
+}

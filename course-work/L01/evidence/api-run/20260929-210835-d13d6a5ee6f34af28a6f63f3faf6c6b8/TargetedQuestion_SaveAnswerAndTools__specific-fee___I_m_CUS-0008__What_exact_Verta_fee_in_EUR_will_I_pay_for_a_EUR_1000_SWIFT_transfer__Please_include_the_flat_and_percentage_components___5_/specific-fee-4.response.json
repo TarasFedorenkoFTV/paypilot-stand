@@ -1,0 +1,17 @@
+{
+  "profile": "lesson-01",
+  "question": "I\u0027m CUS-0008. What exact Verta fee in EUR will I pay for a EUR 1000 SWIFT transfer? Please include the flat and percentage components.",
+  "session_id": "csharp-l01-e74436124d84471a83f65fef777ad980",
+  "started_utc": "2026-09-29T21:09:12.8382882+00:00",
+  "response": {
+    "session_id": "csharp-l01-e74436124d84471a83f65fef777ad980",
+    "request_id": "b8b652d8a3ef4072",
+    "answer": "Perfect. I can now give you the exact fee structure for your EUR 1,000 SWIFT transfer:\n\n**SWIFT Transfer Fee Breakdown:**\n\n- **Flat component:** EUR 15.00\n- **Percentage component:** 0.3% of the EUR equivalent amount\n- **Total fee:** EUR 15.00 \u002B (EUR 1,000 \u00D7 0.3%) = **EUR 18.00**\n\nThis means your EUR 1,000 SWIFT transfer will cost you EUR 18.00 in Verta fees.\n\nPlease note that correspondent bank charges may also be deducted en route by intermediary banks\u2014those are outside Verta\u0027s control and are not refunded by us.",
+    "step_number": 1,
+    "elapsed_ms": 4420.4,
+    "usage": {
+      "input_tokens": 5511,
+      "output_tokens": 308
+    }
+  }
+}

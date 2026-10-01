@@ -1,0 +1,114 @@
+{
+  "request_id": "7a6176daa5294eb1",
+  "name": "agent.request",
+  "span_id": "2fe5951598d94b2c",
+  "started_at": 1790715961.128118,
+  "ended_at": 1790715965.0504482,
+  "duration_ms": 3922.3,
+  "attributes": {
+    "session.id": "csharp-l01-09b27379b1fe4e17b06a05c418759d2f",
+    "dialog.step_number": 1,
+    "run.profile": "clean",
+    "run.active_defects": [],
+    "prompt.version": "base.v1",
+    "llm.provider": "anthropic",
+    "context.replay_active": false,
+    "gen_ai.usage.total_input_tokens": 4831,
+    "gen_ai.usage.total_output_tokens": 250
+  },
+  "children": [
+    {
+      "name": "llm.call",
+      "span_id": "3816117e19b345ae",
+      "started_at": 1790715961.1283245,
+      "ended_at": 1790715962.5473206,
+      "duration_ms": 1419.0,
+      "attributes": {
+        "agent.loop_step": 0,
+        "gen_ai.request.model": "claude-haiku-4-5-20251001",
+        "gen_ai.usage.input_tokens": 2181,
+        "gen_ai.usage.output_tokens": 83
+      },
+      "children": []
+    },
+    {
+      "name": "tool.search_knowledge_base",
+      "span_id": "a3e430a58d5442d9",
+      "started_at": 1790715962.547372,
+      "ended_at": 1790715962.5488255,
+      "duration_ms": 1.5,
+      "attributes": {
+        "tool.name": "search_knowledge_base",
+        "tool.arguments": {
+          "query": "Verta Premium Plus savings account interest rate terms"
+        },
+        "tool.result": {
+          "index": "kb_clean",
+          "top_k": 4,
+          "query": "Verta Premium Plus savings account interest rate terms",
+          "fragments": [
+            {
+              "id": "accounts.md#s1",
+              "doc": "accounts.md",
+              "score": 0.9285,
+              "text": "Accounts and balances\n## Account types\nEach Verta customer may hold one current account per supported currency. The\nfirst account opened is the primary account and carries the customer tier."
+            },
+            {
+              "id": "fx-operations.md#s2",
+              "doc": "fx-operations.md",
+              "score": 0.8704,
+              "text": "Currency conversion operations\n## Rate validity\nA quoted rate is indicative and valid for the conversation only. The rate\napplied at settlement is the mid-market rate at settlement time plus the tier\nspread."
+            },
+            {
+              "id": "tariffs.md#s1",
+              "doc": "tariffs.md",
+              "score": 0.7071,
+              "text": "Verta tariff schedule\n## Account tiers\nVerta offers three account tiers: Tier 1, Tier 2 and Tier 3. The tier\ndetermines the FX spread, the free monthly conversion allowance and the\ntransfer limits."
+            },
+            {
+              "id": "glossary.md#s1",
+              "doc": "glossary.md",
+              "score": 0.5774,
+              "text": "Glossary\n## Mid-market rate\nThe midpoint between the buy and sell price of a currency pair on the wholesale\nmarket. Verta quotes conversions relative to this rate."
+            }
+          ]
+        },
+        "retrieval.query": "Verta Premium Plus savings account interest rate terms",
+        "retrieval.index": "kb_clean",
+        "retrieval.fragments": [
+          {
+            "id": "accounts.md#s1",
+            "score": 0.9285
+          },
+          {
+            "id": "fx-operations.md#s2",
+            "score": 0.8704
+          },
+          {
+            "id": "tariffs.md#s1",
+            "score": 0.7071
+          },
+          {
+            "id": "glossary.md#s1",
+            "score": 0.5774
+          }
+        ]
+      },
+      "children": []
+    },
+    {
+      "name": "llm.call",
+      "span_id": "fbc0c365d0ae457b",
+      "started_at": 1790715962.549012,
+      "ended_at": 1790715965.0504258,
+      "duration_ms": 2501.4,
+      "attributes": {
+        "agent.loop_step": 1,
+        "gen_ai.request.model": "claude-haiku-4-5-20251001",
+        "gen_ai.usage.input_tokens": 2650,
+        "gen_ai.usage.output_tokens": 167
+      },
+      "children": []
+    }
+  ]
+}

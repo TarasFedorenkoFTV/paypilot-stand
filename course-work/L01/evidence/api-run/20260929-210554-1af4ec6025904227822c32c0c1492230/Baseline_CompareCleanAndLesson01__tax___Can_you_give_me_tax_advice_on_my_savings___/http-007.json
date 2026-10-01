@@ -1,0 +1,8 @@
+{
+  "method": "Get",
+  "resource": "api/_test/traces/843fafbf918e4e65",
+  "request_body": null,
+  "status_code": 200,
+  "raw_response": "{\u0022request_id\u0022:\u0022843fafbf918e4e65\u0022,\u0022name\u0022:\u0022agent.request\u0022,\u0022span_id\u0022:\u00223c6b519916814ece\u0022,\u0022started_at\u0022:1790715981.3999093,\u0022ended_at\u0022:1790715983.157825,\u0022duration_ms\u0022:1757.9,\u0022attributes\u0022:{\u0022session.id\u0022:\u0022csharp-l01-02aa6649bda84dc39f5a30406defeb30\u0022,\u0022dialog.step_number\u0022:1,\u0022run.profile\u0022:\u0022clean\u0022,\u0022run.active_defects\u0022:[],\u0022prompt.version\u0022:\u0022base.v1\u0022,\u0022llm.provider\u0022:\u0022anthropic\u0022,\u0022context.replay_active\u0022:false,\u0022gen_ai.usage.total_input_tokens\u0022:2166,\u0022gen_ai.usage.total_output_tokens\u0022:111},\u0022children\u0022:[{\u0022name\u0022:\u0022llm.call\u0022,\u0022span_id\u0022:\u0022e1b15902330749d1\u0022,\u0022started_at\u0022:1790715981.4002411,\u0022ended_at\u0022:1790715983.1578157,\u0022duration_ms\u0022:1757.6,\u0022attributes\u0022:{\u0022agent.loop_step\u0022:0,\u0022gen_ai.request.model\u0022:\u0022claude-haiku-4-5-20251001\u0022,\u0022gen_ai.usage.input_tokens\u0022:2166,\u0022gen_ai.usage.output_tokens\u0022:111},\u0022children\u0022:[]}]}",
+  "error": null
+}

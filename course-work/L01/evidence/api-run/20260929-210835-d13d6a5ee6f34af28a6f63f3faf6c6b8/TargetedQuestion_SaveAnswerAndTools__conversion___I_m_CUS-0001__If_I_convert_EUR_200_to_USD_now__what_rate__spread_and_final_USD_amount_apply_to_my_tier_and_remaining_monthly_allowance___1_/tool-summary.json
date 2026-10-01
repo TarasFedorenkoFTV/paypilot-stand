@@ -1,0 +1,10 @@
+[
+  {
+    "RequestId": "04f71d3b1fa14a16",
+    "tools": [
+      "tool.get_account",
+      "tool.check_limits",
+      "tool.quote_fx"
+    ]
+  }
+]

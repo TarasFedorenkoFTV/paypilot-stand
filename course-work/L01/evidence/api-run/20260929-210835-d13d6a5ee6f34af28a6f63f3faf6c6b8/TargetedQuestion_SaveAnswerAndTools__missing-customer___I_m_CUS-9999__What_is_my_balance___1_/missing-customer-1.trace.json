@@ -1,0 +1,70 @@
+{
+  "request_id": "0542696cb50f4ef7",
+  "name": "agent.request",
+  "span_id": "c65874f0f3c94e06",
+  "started_at": 1790716124.4981701,
+  "ended_at": 1790716126.906839,
+  "duration_ms": 2408.7,
+  "attributes": {
+    "session.id": "csharp-l01-e0e856629fb745d8aff514f536c09514",
+    "dialog.step_number": 1,
+    "run.profile": "lesson-01",
+    "run.active_defects": [
+      "D01",
+      "D02",
+      "D03"
+    ],
+    "prompt.version": "base.v1\u002BD01\u002BD02\u002BD03",
+    "llm.provider": "anthropic",
+    "context.replay_active": false,
+    "gen_ai.usage.total_input_tokens": 4848,
+    "gen_ai.usage.total_output_tokens": 147
+  },
+  "children": [
+    {
+      "name": "llm.call",
+      "span_id": "cafbc8275b2e4c8f",
+      "started_at": 1790716124.5000486,
+      "ended_at": 1790716125.561428,
+      "duration_ms": 1061.4,
+      "attributes": {
+        "agent.loop_step": 0,
+        "gen_ai.request.model": "claude-haiku-4-5-20251001",
+        "gen_ai.usage.input_tokens": 2376,
+        "gen_ai.usage.output_tokens": 69
+      },
+      "children": []
+    },
+    {
+      "name": "tool.get_account",
+      "span_id": "779fd41fea7e422e",
+      "started_at": 1790716125.5615685,
+      "ended_at": 1790716125.5624917,
+      "duration_ms": 0.9,
+      "attributes": {
+        "tool.name": "get_account",
+        "tool.arguments": {
+          "customer_id": "CUS-9999"
+        },
+        "tool.result": {
+          "error": "no accounts found for customer CUS-9999"
+        }
+      },
+      "children": []
+    },
+    {
+      "name": "llm.call",
+      "span_id": "7b6eda0157f14aff",
+      "started_at": 1790716125.562562,
+      "ended_at": 1790716126.9068274,
+      "duration_ms": 1344.3,
+      "attributes": {
+        "agent.loop_step": 1,
+        "gen_ai.request.model": "claude-haiku-4-5-20251001",
+        "gen_ai.usage.input_tokens": 2472,
+        "gen_ai.usage.output_tokens": 78
+      },
+      "children": []
+    }
+  ]
+}

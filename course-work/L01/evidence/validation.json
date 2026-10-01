@@ -1,0 +1,2278 @@
+{
+  "validated_utc": "2026-09-29T22:04:56.0747051Z",
+  "source_batch": "l01-rebuild-5109f05428d545d1b9d5b8a8568884b7",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-clean.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-clean.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-lesson-01.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-lesson-01.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-011.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-012.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-013.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/http-014.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-011.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-012.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-013.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/http-014.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-clean.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-clean.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-lesson-01.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-lesson-01.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-011.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-012.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-013.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/http-014.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-clean.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-clean.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-lesson-01.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-lesson-01.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-011.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-012.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-013.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/http-014.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-clean.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-clean.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-lesson-01.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-lesson-01.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-011.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-012.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-013.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/http-014.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-clean.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-clean.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-lesson-01.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-lesson-01.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/contract-inputs.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-011.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/http-012.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-011.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-012.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-013.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-014.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-015.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-016.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-017.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/http-018.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-2.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-2.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-3.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-3.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-sources.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-011.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-012.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-013.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-014.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-015.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-016.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-017.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-018.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-019.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-020.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-021.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-022.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-023.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-024.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-025.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-026.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-027.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-028.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-029.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/http-030.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-2.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-2.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-3.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-3.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-4.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-4.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-5.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-5.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-summary.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/assembled-prompt.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/conversion-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/conversion-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/tool-summary.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/missing-customer-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/missing-customer-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/tool-summary.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-011.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-012.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-013.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-014.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-015.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-016.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-017.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/http-018.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-2.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-2.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-3.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-3.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/tool-summary.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-011.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-012.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-013.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-014.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-015.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-016.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-017.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-018.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-019.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-020.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-021.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-022.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-023.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-024.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-025.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/http-026.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-2.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-2.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-3.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-3.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-4.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-4.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-5.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-5.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/tool-summary.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/tool-summary.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/transactions-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/transactions-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/clean-swift-quality.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/clean-swift-quality.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-001.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-002.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-003.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-004.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-005.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-006.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-007.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-008.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-009.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/http-010.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/unknown-product-quality.response.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/unknown-product-quality.trace.json",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 Results/baseline.trx",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 Results/quality.trx",
+      "passed": true
+    },
+    {
+      "name": "API capture SHA256 Results/targeted.trx",
+      "passed": true
+    },
+    {
+      "name": "exactly 32 fresh chat captures",
+      "passed": true
+    },
+    {
+      "name": "unique sessions",
+      "passed": true
+    },
+    {
+      "name": "unique request IDs",
+      "passed": true
+    },
+    {
+      "name": "swift-clean answer preserved",
+      "passed": true
+    },
+    {
+      "name": "swift-clean trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "swift-clean exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "swift-lesson-01 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "swift-lesson-01 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "swift-lesson-01 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "premium-clean answer preserved",
+      "passed": true
+    },
+    {
+      "name": "premium-clean trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "premium-clean exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "premium-lesson-01 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "premium-lesson-01 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "premium-lesson-01 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "lost-card-clean answer preserved",
+      "passed": true
+    },
+    {
+      "name": "lost-card-clean trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "lost-card-clean exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "lost-card-lesson-01 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "lost-card-lesson-01 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "lost-card-lesson-01 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "balance-clean answer preserved",
+      "passed": true
+    },
+    {
+      "name": "balance-clean trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "balance-clean exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "balance-lesson-01 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "balance-lesson-01 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "balance-lesson-01 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "tax-clean answer preserved",
+      "passed": true
+    },
+    {
+      "name": "tax-clean trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "tax-clean exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "tax-lesson-01 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "tax-lesson-01 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "tax-lesson-01 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "premium-1 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "premium-1 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "premium-1 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "premium-2 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "premium-2 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "premium-2 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "premium-3 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "premium-3 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "premium-3 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "swift-1 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "swift-1 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "swift-1 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "swift-1 exact answer in report",
+      "passed": true
+    },
+    {
+      "name": "swift-2 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "swift-2 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "swift-2 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "swift-2 exact answer in report",
+      "passed": true
+    },
+    {
+      "name": "swift-3 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "swift-3 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "swift-3 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "swift-3 exact answer in report",
+      "passed": true
+    },
+    {
+      "name": "swift-4 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "swift-4 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "swift-4 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "swift-4 exact answer in report",
+      "passed": true
+    },
+    {
+      "name": "swift-5 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "swift-5 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "swift-5 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "swift-5 exact answer in report",
+      "passed": true
+    },
+    {
+      "name": "swift-clean-control answer preserved",
+      "passed": true
+    },
+    {
+      "name": "swift-clean-control trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "swift-clean-control exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "swift-clean-control exact answer in report",
+      "passed": true
+    },
+    {
+      "name": "conversion-1 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "conversion-1 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "conversion-1 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "transactions-1 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "transactions-1 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "transactions-1 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "missing-customer-1 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "missing-customer-1 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "missing-customer-1 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "moon-product-1 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "moon-product-1 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "moon-product-1 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "moon-product-2 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "moon-product-2 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "moon-product-2 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "moon-product-3 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "moon-product-3 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "moon-product-3 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-1 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-1 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-1 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-2 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-2 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-2 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-3 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-3 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-3 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-4 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-4 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-4 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-5 answer preserved",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-5 trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "specific-fee-5 exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "clean-swift-quality answer preserved",
+      "passed": true
+    },
+    {
+      "name": "clean-swift-quality trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "clean-swift-quality exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "unknown-product-quality answer preserved",
+      "passed": true
+    },
+    {
+      "name": "unknown-product-quality trace/session/profile",
+      "passed": true
+    },
+    {
+      "name": "unknown-product-quality exact answer in journal",
+      "passed": true
+    },
+    {
+      "name": "10 main findings",
+      "passed": true
+    },
+    {
+      "name": "4 US findings",
+      "passed": true
+    },
+    {
+      "name": "3 rewritten requirements",
+      "passed": true
+    },
+    {
+      "name": "no placeholders",
+      "passed": true
+    },
+    {
+      "name": "defect type Суперечність",
+      "passed": true
+    },
+    {
+      "name": "defect type Надлишкове обмеження",
+      "passed": true
+    },
+    {
+      "name": "defect type Неверифікованість",
+      "passed": true
+    },
+    {
+      "name": "defect type Неоднозначність",
+      "passed": true
+    },
+    {
+      "name": "defect type Неповнота",
+      "passed": true
+    },
+    {
+      "name": "defect type Невідстежуваність",
+      "passed": true
+    },
+    {
+      "name": "8 candidate headings",
+      "passed": true
+    },
+    {
+      "name": "unchanged section 2",
+      "passed": true
+    },
+    {
+      "name": "unchanged section 4",
+      "passed": true
+    },
+    {
+      "name": "unchanged section 8",
+      "passed": true
+    },
+    {
+      "name": "defective fee prohibition removed",
+      "passed": true
+    },
+    {
+      "name": "plausible product terms removed",
+      "passed": true
+    },
+    {
+      "name": "new calculation exception",
+      "passed": true
+    },
+    {
+      "name": "missing-input output consistent",
+      "passed": true
+    },
+    {
+      "name": "16 test teardown records captured",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210554-1af4ec6025904227822c32c0c1492230/SystemPrompt_Lesson01_SaveAssembledContract/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "restored 20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/restored-profile.json",
+      "passed": true
+    },
+    {
+      "name": "baseline evidence cases passed",
+      "passed": true
+    },
+    {
+      "name": "quality passed1 failed1 recorded",
+      "passed": true
+    },
+    {
+      "name": "targeted evidence cases passed",
+      "passed": true
+    },
+    {
+      "name": "link evidence/run-summary.md",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/",
+      "passed": true
+    },
+    {
+      "name": "link evidence/source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/run-log.md",
+      "passed": true
+    },
+    {
+      "name": "link evidence/assembled-prompt.md",
+      "passed": true
+    },
+    {
+      "name": "link evidence/US-01.md",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-2.response.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-2.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-3.response.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-3.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-4.response.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-4.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-5.response.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-5.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.response.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link base.v1.1.md",
+      "passed": true
+    },
+    {
+      "name": "link evidence/first-pass-input.json",
+      "passed": true
+    },
+    {
+      "name": "link evidence/ai-first-pass.md",
+      "passed": true
+    },
+    {
+      "name": "link specification-review.md",
+      "passed": true
+    },
+    {
+      "name": "link base.v1.1.md",
+      "passed": true
+    },
+    {
+      "name": "link prompt-governance-policy.md",
+      "passed": true
+    },
+    {
+      "name": "link ../../prompts/CHANGELOG.md",
+      "passed": true
+    },
+    {
+      "name": "link evidence/run-log.md",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-clean.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-clean.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-lesson-01.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__swift___I_m_CUS-0008__What_is_the_fee_for_a_SWIFT_transfer_at_Verta___/swift-lesson-01.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-clean.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-clean.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-lesson-01.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__premium___I_m_CUS-0001__What_are_the_interest_rate_and_terms_of_your_Verta_Premium_Plus_savings_account___/premium-lesson-01.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-clean.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-clean.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-lesson-01.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__lost-card___I_m_CUS-0001__I_lost_my_card__what_should_I_do___/lost-card-lesson-01.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-clean.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-clean.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-lesson-01.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__balance___I_m_CUS-0001__What_is_my_balance___/balance-lesson-01.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-clean.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-clean.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-lesson-01.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Baseline_CompareCleanAndLesson01__tax___Can_you_give_me_tax_advice_on_my_savings___/tax-lesson-01.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-2.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-2.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-3.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/PremiumPlus_ThreeRuns_ShowRetrievalSources/premium-3.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-2.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-2.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-3.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-3.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-4.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-4.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-5.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-5.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/Swift_FiveIndependentRuns_AndCleanControl/swift-clean-control.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/conversion-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__conversion___I_m_CUS-0001__If_I_convert_EUR_200_to_USD_now__what_rate__spread_and_final_USD_amount_apply_to_my_tier_and_remaining_monthly_allowance___1_/conversion-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/transactions-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__transactions___I_m_CUS-0001__Show_my_recent_transactions___1_/transactions-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/missing-customer-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__missing-customer___I_m_CUS-9999__What_is_my_balance___1_/missing-customer-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-2.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-2.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-3.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__moon-product___I_m_CUS-0001__What_is_the_interest_rate__minimum_deposit_and_withdrawal_policy_of_Verta_Moon_Platinum_savings___3_/moon-product-3.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-1.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-1.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-2.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-2.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-3.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-3.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-4.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-4.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-5.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210835-d13d6a5ee6f34af28a6f63f3faf6c6b8/TargetedQuestion_SaveAnswerAndTools__specific-fee___I_m_CUS-0008__What_exact_Verta_fee_in_EUR_will_I_pay_for_a_EUR_1000_SWIFT_transfer__Please_include_the_flat_and_percentage_components___5_/specific-fee-5.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/clean-swift-quality.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Clean_Swift_ContainsPublishedFeeComponents/clean-swift-quality.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/unknown-product-quality.response.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-211322-e7fb02fe951840828fa2c33ab6a9b7b0/Lesson01_UnknownProduct_MustNotQuoteInterestRate/unknown-product-quality.trace.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/20260929-210554-1af4ec6025904227822c32c0c1492230/ContractInputs_SaveEnvironmentToolsAndUserStory/contract-inputs.json",
+      "passed": true
+    },
+    {
+      "name": "link api-run/Results/baseline.trx",
+      "passed": true
+    },
+    {
+      "name": "link api-run/Results/quality.trx",
+      "passed": true
+    },
+    {
+      "name": "link api-run/Results/targeted.trx",
+      "passed": true
+    },
+    {
+      "name": "tracked stand source unchanged",
+      "passed": true
+    }
+  ],
+  "chat_count": 32,
+  "test_case_count": 16,
+  "note": "Artifacts sourced solely from new C# API-test captures; AI annotation is explicitly separate. Expected D03 quality failure is retained. No v1.1 runtime after-test."
+}

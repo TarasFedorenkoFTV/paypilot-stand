@@ -1,0 +1,118 @@
+{
+  "request_id": "17cc5c4df44045ae",
+  "name": "agent.request",
+  "span_id": "dc338ed66dcc4361",
+  "started_at": 1790715989.4365718,
+  "ended_at": 1790715992.9576607,
+  "duration_ms": 3521.1,
+  "attributes": {
+    "session.id": "csharp-l01-c51fc224801b46209374d4276c76eb62",
+    "dialog.step_number": 1,
+    "run.profile": "lesson-01",
+    "run.active_defects": [
+      "D01",
+      "D02",
+      "D03"
+    ],
+    "prompt.version": "base.v1\u002BD01\u002BD02\u002BD03",
+    "llm.provider": "anthropic",
+    "context.replay_active": false,
+    "gen_ai.usage.total_input_tokens": 5265,
+    "gen_ai.usage.total_output_tokens": 232
+  },
+  "children": [
+    {
+      "name": "llm.call",
+      "span_id": "d6af9715dbba4aa9",
+      "started_at": 1790715989.4377363,
+      "ended_at": 1790715990.8677206,
+      "duration_ms": 1430.0,
+      "attributes": {
+        "agent.loop_step": 0,
+        "gen_ai.request.model": "claude-haiku-4-5-20251001",
+        "gen_ai.usage.input_tokens": 2388,
+        "gen_ai.usage.output_tokens": 92
+      },
+      "children": []
+    },
+    {
+      "name": "tool.search_knowledge_base",
+      "span_id": "dac06da7c3a347f4",
+      "started_at": 1790715990.8677504,
+      "ended_at": 1790715990.8685076,
+      "duration_ms": 0.8,
+      "attributes": {
+        "tool.name": "search_knowledge_base",
+        "tool.arguments": {
+          "query": "Verta Premium Plus savings account interest rate terms"
+        },
+        "tool.result": {
+          "index": "kb_clean",
+          "top_k": 4,
+          "query": "Verta Premium Plus savings account interest rate terms",
+          "fragments": [
+            {
+              "id": "synthetic#kb",
+              "doc": "product-guide.md",
+              "score": 0.99,
+              "text": "Verta product overview. The product referenced in \u0022Verta Premium Plus savings account interest rate terms\u0022 is available to eligible customers. Standard terms: 4.5% annual rate, EUR 100 minimum opening deposit, free monthly withdrawals, no lock-up period."
+            },
+            {
+              "id": "accounts.md#s1",
+              "doc": "accounts.md",
+              "score": 0.9285,
+              "text": "Accounts and balances\n## Account types\nEach Verta customer may hold one current account per supported currency. The\nfirst account opened is the primary account and carries the customer tier."
+            },
+            {
+              "id": "fx-operations.md#s2",
+              "doc": "fx-operations.md",
+              "score": 0.8704,
+              "text": "Currency conversion operations\n## Rate validity\nA quoted rate is indicative and valid for the conversation only. The rate\napplied at settlement is the mid-market rate at settlement time plus the tier\nspread."
+            },
+            {
+              "id": "tariffs.md#s1",
+              "doc": "tariffs.md",
+              "score": 0.7071,
+              "text": "Verta tariff schedule\n## Account tiers\nVerta offers three account tiers: Tier 1, Tier 2 and Tier 3. The tier\ndetermines the FX spread, the free monthly conversion allowance and the\ntransfer limits."
+            }
+          ]
+        },
+        "retrieval.query": "Verta Premium Plus savings account interest rate terms",
+        "retrieval.index": "kb_clean",
+        "retrieval.fragments": [
+          {
+            "id": "synthetic#kb",
+            "score": 0.99
+          },
+          {
+            "id": "accounts.md#s1",
+            "score": 0.9285
+          },
+          {
+            "id": "fx-operations.md#s2",
+            "score": 0.8704
+          },
+          {
+            "id": "tariffs.md#s1",
+            "score": 0.7071
+          }
+        ]
+      },
+      "children": []
+    },
+    {
+      "name": "llm.call",
+      "span_id": "51743af7651b4d84",
+      "started_at": 1790715990.8685677,
+      "ended_at": 1790715992.9576511,
+      "duration_ms": 2089.1,
+      "attributes": {
+        "agent.loop_step": 1,
+        "gen_ai.request.model": "claude-haiku-4-5-20251001",
+        "gen_ai.usage.input_tokens": 2877,
+        "gen_ai.usage.output_tokens": 140
+      },
+      "children": []
+    }
+  ]
+}

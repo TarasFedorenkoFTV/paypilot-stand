@@ -1,0 +1,8 @@
+{
+  "method": "Get",
+  "resource": "health",
+  "request_body": null,
+  "status_code": 200,
+  "raw_response": "{\u0022status\u0022:\u0022ok\u0022,\u0022profile\u0022:\u0022lesson-01\u0022,\u0022startup_profile\u0022:\u0022clean\u0022,\u0022active_defects\u0022:[\u0022D01\u0022,\u0022D02\u0022,\u0022D03\u0022],\u0022provider\u0022:\u0022anthropic\u0022,\u0022otlp\u0022:true}",
+  "error": null
+}
