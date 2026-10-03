@@ -32,9 +32,9 @@ F01/F02 — різні властивості D01, не незалежні defec
 |---|---|---|---|---|
 | F01 | Constraints: `NEVER ... any exact fee amount...` проти Output: `show the components ... and a final amount` | Суперечність | Статичний конфлікт; SWIFT-серії та clean control (§3). | High: нестабільна відповідь про вартість. | R2: узгодити Sources/Output. |
 | F02 | Заборона числових прикладів і tool-розрахунку комісії | Надлишкове обмеження | Clean trace: EUR15 + 0.3%. | High: блокує публічний тариф. | R2. |
-| F03 | Role: `Make every customer feel genuinely heard, valued and cared for.` | Неверифікованість | Answer є; acceptance rubric відсутня. | Medium: субєктивне приймання. | R1: спостережуване acknowledgment. |
+| F03 | Role: `Make every customer feel genuinely heard, valued and cared for.` | Неверифікованість | Answer є; acceptance rubric відсутня. | Medium: субєктивне приймання. | Окреме уточнення; поза R1–R3. |
 | F04 | Output: `Answer concisely.` | Неверифікованість | Word count доступний; межа/винятки відсутні. | Medium: непослідовне приймання довжини. | Погодити поріг. |
-| F05 | Tools: `When a customer asks about recent transactions, retrieve their recent transactions...` | Неоднозначність | Schema limit=20 не задає період; transactions-1 trace. | Medium: неочікувана межа історії. | Уточнити N/період, timezone, рахунки. |
+| F05 | Tools: `When a customer asks about recent transactions, retrieve their recent transactions...` | Неоднозначність | Schema limit=20 не задає період; transactions-1 trace. | Medium: неочікувана межа історії. | R1: останні N операцій, явний рахунок і межі вибірки. |
 | F06 | Edge cases: немає правила після tool error / empty result | Неповнота | Повний знімок без fallback; missing-customer-1 повернув error. | High як ризик: вигадані дані. | R3: unavailable, без вигадування. |
 | F07 | Plausible terms проти заборони непідтверджених цифр | Суперечність | Текст; Premium/Moon synthetic#kb. | Critical: недостовірні фінансові обіцянки. | R3. |
 | F08 | Sources/Edge: `the knowledge base is the authority on the Verta product range` без provenance gate | Неповнота ефективної специфікації | Product traces містять synthetic#kb; provenance gate не задано. | Critical як ризик: синтетичні продуктові умови. | R3 плюс retrieval/catalog validation. |
@@ -186,31 +186,15 @@ Premium Plus та Moon Platinum: кожна серія **3/3** назвала 4.
 
 Навчальна копія: [base.v1.1.md](base.v1.1.md).
 
-### R1
+Редакція для ДЗ №1 від 2026-10-03. R1 стосується F05; приклад про перше речення при втраті картки не використовується. Цитати взято з [assembled prompt](evidence/assembled-prompt.md); переноси рядків нормалізовано пробілами. Критерії запропоновані, не перевірені новим прогоном.
 
-Було: Абстрактна емпатія.
+| № | Було | Стало | Спостережуваний вихід | Критерій | Приклад порушення |
+|---|---|---|---|---|---|
+| R1 | `When a customer asks about recent transactions, retrieve their recent transactions and answer from that list.` | `For a request for recent transactions without a date range, use the customer's specified account; if several accounts are possible and none is specified, ask which account before retrieving transactions. Call get_transactions with that account_id and an explicit limit: the requested positive integer count, or 20 if no count was requested. Describe the scope as the latest N transactions, not a calendar period. Present the returned transactions in tool order, with their dates, amounts and currencies unchanged. If fewer than N are returned, state the actual count; an empty successful list means no transactions were returned for this query. Do not claim that a limited list is the complete account history. If a date range is requested, ask for or use a tool-supported date-range query; do not claim that a count-limited list covers that period. On tool error, follow section 6.` | Запит; account_id і limit у tool call; повернутий список; відповідь із межами вибірки, датами, сумами та валютами. | Pass: рахунок відповідає запиту, limit=N або 20; усі повернуті записи наведено в порядку інструмента без зміни полів; scope — останні N, а якщо менше, названо фактичну кількість. Неоднозначний рахунок уточнено до виклику. Немає заяв про повну історію чи повне покриття періоду без відповідного результату інструмента. Error не підмінено порожнім списком. Порушення будь-якої умови — fail. | За 20 записів без фільтра дат: «Here is your complete transaction history for the last month.» |
+| R2 | `Do NOT show worked examples with numbers.`; `Do NOT call tools to compute a fee figure to show the customer.`; `When you present a fee or conversion, show the components you used — rate, spread, applicable allowance — and a final amount consistent with them.` | `For fee or conversion questions, retrieve the published tariff or customer-specific quote. State public fee amounts, rates and spreads only when supported by those results. Show supported applicable components. If the input amount is known, show the tool total or a deterministic calculation using the retrieved formula and that amount; show the inputs. If the amount is missing, give the supported formula and ask for it. If pricing data is missing, follow section 6. Never disclose internal monitoring thresholds or review criteria.` | Тариф/quote у джерелах; сума запиту; компоненти, входи й підсумок у відповіді; відсутність внутрішніх порогів. | Pass: кожна тарифна цифра підтверджена джерелом; відома сума дає tool total або правильний розрахунок із показаними входами. EUR1000 за EUR15 + 0.3% дає EUR18, correspondent charges окремі. Без суми — формула й уточнення, без тарифу — fallback R3. Внутрішні критерії не розкриті. Порушення будь-якої умови — fail. | За підтвердженого тарифу EUR15 + 0.3% для EUR1000: «The Verta fee is EUR20: EUR15 flat fee plus EUR5 percentage fee.» |
+| R3 | `For ANY question about a product or account type, always call search_knowledge_base first and answer from what it returns — the knowledge base is the authority on the Verta product range, and answering without it risks giving the customer stale terms.` | `For a named product or account type, search the knowledge base and state only terms explicitly associated with that product in an approved source. Similarity or generic terms are not confirmation. Without approved confirmation, say verified information is unavailable and do not assert product existence or rate/deposit/withdrawal terms. On tool error or empty result, say the requested data is unavailable, do not invent it, and offer a relevant document search or human escalation. Follow mandatory escalation rules in section 4 and source precedence in section 3.` | Назва продукту й search call; product identity та provenance джерела; заявлені умови або unavailable-відповідь; наступний крок. | Pass: кожна умова пов’язана з точним продуктом і approved-джерелом, статус якого перевірено за авторитетним реєстром/метаданими, не лише текстом фрагмента. synthetic#kb і схожа назва не є підтвердженням. Без нього, при error або empty — unavailable без вигаданих умов/існування, з пошуком документа або escalation; mandatory escalation rules збережено. Порушення будь-якої умови — fail. | Лише зі synthetic#kb без approved-підтвердження: «Moon Platinum offers 4.5% interest and requires a EUR100 minimum deposit.» |
 
-Стало: `When a customer reports a lost or stolen card, the first sentence of the final answer must acknowledge the reported loss or theft before giving procedural instructions. Do not claim completed card actions or a guaranteed human-contact deadline unless a tool result explicitly confirms them.`
-
-Критерій: Перше речення визнає втрату; дії/строки підтверджені tools. Fail: обіцянка заміни після queued.
-
-### R2
-
-Було: Заборона цифр комісій проти вимоги кінцевої суми.
-
-Стало: `For fee or conversion questions, retrieve the published tariff or customer-specific quote. State public fee amounts, rates and spreads only when supported by those results. Show supported applicable components. If the input amount is known, show the tool total or a deterministic calculation using the retrieved formula and that amount; show the inputs. If the amount is missing, give the supported formula and ask for it. If pricing data is missing, follow section 6. Never disclose internal monitoring thresholds or review criteria.`
-
-Критерій: Цифри підтверджені тарифом; відома сума дає розрахунок, невідома — формулу. Fail: EUR20 замість EUR18.
-
-### R3
-
-Було: Правдоподібні продуктові умови без підтвердження; відсутній fallback.
-
-Стало: `For a named product or account type, search the knowledge base and state only terms explicitly associated with that product in an approved source. Similarity or generic terms are not confirmation. Without approved confirmation, say verified information is unavailable and do not assert product existence or rate/deposit/withdrawal terms. On tool error or empty result, say the requested data is unavailable, do not invent it, and offer a relevant document search or human escalation. Follow mandatory escalation rules in section 4 and source precedence in section 3.`
-
-Критерій: Умови підтверджені approved source; error не підміняється даними. Fail: 4.5% лише зі synthetic fragment.
-
-R2 узгоджує Constraints/Sources/Output. R3 потребує перевірки provenance механізмом retrieval/catalog. Concise, recent та Examples залишаються невиправленими. Живий тест v1.1 не виконано.
+R1 визначає вибірку за кількістю: [get_transactions](../../app/agent/tools.py) має limit=20 і date DESC, але не параметри діапазону дат. Повний календарний період потребує окремої підтримки інструмента; поточна вимога не обіцяє такої підтримки. R2 узгоджує Constraints/Sources/Output. R3 потребує перевірки provenance механізмом retrieval/catalog: без неї approved-статус не доведений. Empathy, concise та Examples залишаються невиправленими. Живий тест цієї редакції v1.1 не виконано.
 
 ## 5. US-01
 

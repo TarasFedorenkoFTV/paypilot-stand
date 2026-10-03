@@ -16,3 +16,12 @@ Reason: unverifiable tone, conflicting/overbroad disclosure rules, unsupported p
 Candidate: course-work/L01/base.v1.1.md, derived only from the fresh API prompt snapshot.
 Evidence before: new C# runs; 14/14 evidence cases, clean quality passed, D03 quality failed as expected. Evidence after: NOT RUN; clean control is not validation of v1.1.
 Not measured: before/after effect, regression, latency/cost change. Provenance enforcement required; concise/recent/examples debt remains.
+
+### v1.1 candidate revision — homework alignment (2026-10-03)
+Status: NOT DEPLOYED; static review only, live after-tests NOT RUN.
+Author: Roman Olshevskyi.
+R1 now addresses F05: explicit account and transaction count (requested N, otherwise 20), tool-order output and limits on completeness/date-range claims. The earlier lost-card first-sentence example is excluded by Homework 1. Original role/tone is restored in the learning copy; F03 remains open.
+R2/R3 wording is retained. Report section 4 now gives source quotes (line breaks normalized), observable outputs, pass/fail criteria and concrete violation examples for all three requirements.
+Owners to confirm: Product/Support and transaction-tool owner (R1), Compliance+Payments (R2), Product/KB owner (R3). No approvals claimed.
+Candidate: course-work/L01/base.v1.1.md. Evidence: existing API captures unchanged; app/agent/tools.py confirms count limit and date-descending retrieval without date-range parameters. No new runtime results claimed.
+Limitations: full date-range retrieval requires tool support; approved-source provenance requires retrieval/catalog enforcement; empathy/concise/examples remain open. This revision supersedes the earlier R1 scope and recent-history debt statement; the previous entry is retained as history.
