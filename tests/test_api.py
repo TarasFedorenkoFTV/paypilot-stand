@@ -393,3 +393,9 @@ def test_ui_explains_the_comparison_without_parsing_model_html():
     body = ui.split("async function showExplanation")[1].split("// Collect tool spans")[0]
     assert "renderRich" in body
     assert "innerHTML" not in body
+
+
+def test_compose_passes_the_explain_model_into_the_container():
+    from app import config
+    compose = (config.ROOT / "docker-compose.yml").read_text(encoding="utf-8")
+    assert "EXPLAIN_MODEL=${EXPLAIN_MODEL:-}" in compose
