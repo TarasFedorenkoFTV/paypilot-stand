@@ -6,7 +6,7 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
 from app import clock, config, db, defects, otel, tracing
-from app.agent import loop, prompt, tools
+from app.agent import explain, loop, prompt, tools
 
 defects.validate_startup()
 db.ensure_seeded()
@@ -89,6 +89,33 @@ def test_compare(body: CompareIn):
         defects.set_runtime_profile(saved_profile)
         defects.set_runtime_defects(saved_extra)
     return out
+
+
+class ExplainArm(BaseModel):
+    request_id: str
+    answer: str = ""
+
+
+class ExplainIn(BaseModel):
+    message: str
+    clean: ExplainArm
+    profile: ExplainArm
+
+
+@app.post("/api/_test/compare/explain")
+def test_compare_explain(body: ExplainIn):
+    trees = {}
+    for label, arm in (("clean", body.clean), ("profile", body.profile)):
+        tree = tracing.get(arm.request_id)
+        if tree is None:
+            raise HTTPException(404, f"trace {arm.request_id} not found ({label})")
+        trees[label] = tree
+    facts = explain.build_facts(body.message, trees["clean"], trees["profile"],
+                                body.clean.answer, body.profile.answer)
+    try:
+        return explain.explain(facts)
+    except Exception as e:
+        raise HTTPException(502, f"explain model failed: {e}")
 
 
 @app.get("/health")

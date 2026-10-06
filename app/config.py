@@ -34,6 +34,7 @@ DEFECTS_ENV = os.environ.get("DEFECTS", "")
 
 LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "mock")
 LLM_MODEL = os.environ.get("LLM_MODEL", "")
+EXPLAIN_MODEL = os.environ.get("EXPLAIN_MODEL", "")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 

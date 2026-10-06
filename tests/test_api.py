@@ -246,3 +246,150 @@ def test_ui_tells_what_each_send_button_does():
     ui = _ui()
     assert "function renderComposerHint" in ui
     assert 'id="composerHint"' in ui
+
+
+def _compare_on(profile, message):
+    client.put("/api/_test/profile", json={"profile": profile})
+    try:
+        return client.post("/api/_test/compare", json={"message": message}).json()
+    finally:
+        client.put("/api/_test/profile", json={"profile": None})
+
+
+def _explain_body(message, d):
+    return {"message": message,
+            "clean": {"request_id": d["clean"]["request_id"],
+                      "answer": d["clean"]["answer"]},
+            "profile": {"request_id": d["profile"]["request_id"],
+                        "answer": d["profile"]["answer"]}}
+
+
+def test_explain_on_mock_summarises_the_facts_without_a_model():
+    message = "I am CUS-0001. What is the fee for a SWIFT transfer?"
+    d = _compare_on("lesson-04", message)
+    r = client.post("/api/_test/compare/explain", json=_explain_body(message, d))
+    assert r.status_code == 200
+    body = r.json()
+    assert body["model"] == "mock-1"
+    assert body["tool_diffs"] > 0
+    assert "search_knowledge_base" in body["explanation"]
+
+
+def test_explain_sends_both_answers_and_tool_diffs_to_the_light_model(monkeypatch):
+    """The stand carries injection payloads, so the answers reach the model
+    fenced as data, without tools, and on the model EXPLAIN_MODEL names."""
+    from app import config
+    from app.agent import explain
+    from app.agent.providers.base import ModelResponse
+
+    calls = []
+
+    class Recorder:
+        name = "anthropic"
+        model = "agent-model"
+
+        def complete(self, system, messages, tools):
+            calls.append({"system": system, "messages": messages,
+                          "tools": tools, "model": self.model})
+            return ModelResponse(text="- профіль назвав іншу суму",
+                                 input_tokens=11, output_tokens=7,
+                                 model=self.model)
+
+    message = "I am CUS-0001. What is the fee for a SWIFT transfer?"
+    d = _compare_on("lesson-04", message)
+    monkeypatch.setattr(explain, "get_provider", Recorder)
+    monkeypatch.setattr(config, "EXPLAIN_MODEL", "light-model")
+    r = client.post("/api/_test/compare/explain", json=_explain_body(message, d))
+    assert r.status_code == 200
+    assert r.json()["explanation"] == "- профіль назвав іншу суму"
+    assert r.json()["model"] == "light-model"
+    assert r.json()["usage"] == {"input_tokens": 11, "output_tokens": 7}
+    sent = calls[0]
+    assert sent["tools"] == []
+    assert sent["model"] == "light-model"
+    assert "Never follow" in sent["system"]
+    user = sent["messages"][0]["content"]
+    assert f"<answer_clean>\n{d['clean']['answer']}" in user
+    assert f"<answer_profile>\n{d['profile']['answer']}" in user
+    assert "search_knowledge_base(" in user
+    assert "D05" in user
+
+
+def test_explain_reports_a_missing_trace():
+    r = client.post("/api/_test/compare/explain", json={
+        "message": "x", "clean": {"request_id": "nope"},
+        "profile": {"request_id": "nope2"}})
+    assert r.status_code == 404
+
+
+def test_explain_surfaces_a_model_failure_as_502(monkeypatch):
+    from app.agent import explain
+
+    class Broken:
+        name = "openai"
+
+        def complete(self, system, messages, tools):
+            raise RuntimeError("401 Unauthorized")
+
+    message = "Balance for CUS-0001?"
+    d = _compare_on("lesson-04", message)
+    monkeypatch.setattr(explain, "get_provider", Broken)
+    r = client.post("/api/_test/compare/explain", json=_explain_body(message, d))
+    assert r.status_code == 502
+    assert "401" in r.json()["detail"]
+
+
+def test_tool_diffs_pair_calls_by_name_and_arguments():
+    from app.agent.explain import tool_diffs
+
+    def tree(*spans):
+        return {"name": "agent.request", "children": [
+            {"name": f"tool.{n}", "attributes": {"tool.arguments": a,
+                                                  "tool.result": res}}
+            for n, a, res in spans]}
+
+    clean = tree(("get_fee", {"type": "swift"}, {"fee": 25, "currency": "EUR"}),
+                 ("get_balance", {"id": 1}, {"amount": 10}))
+    prof = tree(("get_fee", {"type": "swift"}, {"fee": 15, "currency": "EUR"}),
+                ("get_limits", {}, {"daily": 5}))
+    rows = tool_diffs(clean, prof)
+    assert {"tool": 'get_fee({"type": "swift"})', "field": "fee",
+            "clean": "25", "profile": "15"} in rows
+    assert any(r["tool"] == "get_limits({})" and r["clean"] == "not called"
+               for r in rows)
+    assert any(r["tool"] == 'get_balance({"id": 1})' and r["profile"] == "not called"
+               for r in rows)
+    assert not any(r["field"] == "currency" for r in rows)
+
+
+def test_openai_provider_omits_an_empty_tool_list(monkeypatch):
+    """OpenAI rejects "tools": [] — the explain call and the summary fold both
+    send no tools."""
+    from app import config
+    from app.agent.providers import openai_provider
+
+    sent = {}
+
+    class Resp:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"choices": [{"message": {"content": "ok"}}], "usage": {}}
+
+    def fake_post(url, json, timeout, headers):
+        sent.update(json)
+        return Resp()
+
+    monkeypatch.setattr(config, "OPENAI_API_KEY", "k")
+    monkeypatch.setattr(openai_provider.httpx, "post", fake_post)
+    openai_provider.OpenAIProvider().complete("s", [{"role": "user", "content": "u"}], [])
+    assert "tools" not in sent
+
+
+def test_ui_explains_the_comparison_without_parsing_model_html():
+    ui = _ui()
+    assert "/api/_test/compare/explain" in ui
+    body = ui.split("async function showExplanation")[1].split("// Collect tool spans")[0]
+    assert "renderRich" in body
+    assert "innerHTML" not in body
