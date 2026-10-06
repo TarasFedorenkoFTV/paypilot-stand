@@ -98,6 +98,11 @@
   .verdict{grid-column:1/-1;padding:8px 12px;border-radius:8px;background:var(--panel2);
         border:1px solid var(--line);font-size:13px;white-space:normal}
   .verdict.on{border-color:#4a3a1e}
+  .explain{grid-column:1/-1;padding:10px 12px;border-radius:8px;background:var(--panel);
+        border:1px solid var(--accent);font-size:13px;white-space:pre-wrap}
+  .explain h4{margin:0 0 6px;font:600 12px var(--mono);color:var(--accent)}
+  .explain .src{margin-top:6px;font:11px var(--mono);color:var(--muted);white-space:normal}
+  .explain.err{border-color:var(--line);color:var(--muted)}
   .hl{grid-column:1/-1;font:11px var(--mono);color:var(--muted);display:flex;gap:8px;
         align-items:center;white-space:normal}
   .dadd{background:#1e4a33;border-radius:3px}
@@ -504,6 +509,10 @@ async function compare(){
     verdict.className = 'verdict';
     verdict.textContent = 'звіряю результати інструментів…';
     holder.appendChild(verdict);
+    const explainBox = document.createElement('div');
+    explainBox.className = 'explain';
+    holder.appendChild(explainBox);
+    const explained = showExplanation(explainBox, text, d);
 
     const diff = wordDiff(inlineTokens(d.clean.answer || '(порожньо)'),
                           inlineTokens(d.profile.answer || '(порожньо)'));
@@ -554,11 +563,39 @@ async function compare(){
     const toolDiffs = await showPayloadDiff(holder, d.clean.request_id, d.profile.request_id);
     verdict.textContent = verdictText(d, cond.differing, !diff.changed, toolDiffs);
     if(cond.differing.length && (diff.changed || toolDiffs)) verdict.classList.add('on');
+    await explained;
   }catch(e){
     holder.textContent = 'Помилка: ' + e.message;
     holder.classList.add('err');
   }finally{
     $('cmpBtn').disabled = false; $('sendBtn').disabled = false; inp.focus();
+  }
+}
+
+async function showExplanation(box, message, d){
+  const h = document.createElement('h4');
+  h.textContent = 'Смислова різниця';
+  box.appendChild(h);
+  const body = document.createElement('div');
+  body.textContent = 'легка модель звіряє відповіді й результати інструментів…';
+  box.appendChild(body);
+  try{
+    const r = await api('/api/_test/compare/explain', jpost({
+      message: message,
+      clean: {request_id: d.clean.request_id, answer: d.clean.answer || ''},
+      profile: {request_id: d.profile.request_id, answer: d.profile.answer || ''}}));
+    body.textContent = '';
+    renderRich(r.explanation || '(модель нічого не відповіла)', body);
+    const src = document.createElement('div');
+    src.className = 'src';
+    src.textContent = 'пояснення моделі ' + (r.model || '—') +
+      (r.usage ? ' · in ' + r.usage.input_tokens + ' / out ' + r.usage.output_tokens + ' tok' : '') +
+      ' — це думка моделі, а не перевірка: звірте її з підсвіткою й таблицею інструментів нижче';
+    box.appendChild(src);
+  }catch(e){
+    box.classList.add('err');
+    body.textContent = 'Смислове пояснення недоступне: ' + e.message +
+      '. Різниця нижче показана без нього.';
   }
 }
 

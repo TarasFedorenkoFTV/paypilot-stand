@@ -42,10 +42,11 @@ class OpenAIProvider(Provider):
         payload = {
             "model": self.model,
             "messages": _to_openai(system, messages),
-            "tools": [{"type": "function", "function": {
-                "name": t["name"], "description": t["description"],
-                "parameters": t["input_schema"]}} for t in tools],
         }
+        if tools:
+            payload["tools"] = [{"type": "function", "function": {
+                "name": t["name"], "description": t["description"],
+                "parameters": t["input_schema"]}} for t in tools]
         resp = httpx.post(API_URL, json=payload, timeout=60, headers={
             "Authorization": f"Bearer {config.OPENAI_API_KEY}"})
         resp.raise_for_status()
