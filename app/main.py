@@ -38,6 +38,24 @@ class CompareIn(BaseModel):
     profile: str | None = None
 
 
+def _arm_conditions() -> dict:
+    from app.rag import retriever
+    return {
+        "retrieval": {"index": retriever.active_index_name(),
+                      "top_k": retriever.active_top_k()},
+        "clock": clock.describe()["now"],
+    }
+
+
+def _model_of(request_id: str) -> str | None:
+    tree = tracing.get(request_id) or {}
+    first_call = next((c for c in tree.get("children", [])
+                       if c.get("name") == "llm.call"), None)
+    if first_call is None:
+        return None
+    return first_call.get("attributes", {}).get("gen_ai.request.model")
+
+
 @app.post("/api/_test/compare")
 def test_compare(body: CompareIn):
     ""
@@ -51,6 +69,7 @@ def test_compare(body: CompareIn):
             defects.set_runtime_profile(prof)
             defects.set_runtime_defects(extra)
             loop.reset_sessions()
+            conditions = _arm_conditions()
             res = loop.run_turn(None, body.message)
             out[label] = {
                 "profile": prof,
@@ -58,6 +77,11 @@ def test_compare(body: CompareIn):
                 "answer": res["answer"],
                 "request_id": res["request_id"],
                 "usage": res["usage"],
+                "prompt_version": res["prompt_version"],
+                "step_number": res["step_number"],
+                "elapsed_ms": res["elapsed_ms"],
+                "model": _model_of(res["request_id"]),
+                **conditions,
             }
     except ValueError as e:
         raise HTTPException(400, str(e))

@@ -87,6 +87,29 @@
   .cmp .col.dirty{border-color:#4a3a1e}
   .cmp h3{margin:0 0 8px;font:11px var(--mono);letter-spacing:.05em;color:var(--muted)}
   .cmp .col.dirty h3{color:var(--warn)}
+  .cond{grid-column:1/-1;width:100%;border-collapse:collapse;font:11px var(--mono);
+        background:var(--panel);border:1px solid var(--line);border-radius:10px}
+  .cond th,.cond td{padding:5px 10px;text-align:left;vertical-align:top;
+        border-bottom:1px solid var(--line);color:var(--muted);white-space:normal}
+  .cond th{font-weight:600;color:var(--text)}
+  .cond tr.diffrow td{color:var(--warn);font-weight:600}
+  .cond tr.diffrow td:first-child{color:var(--text)}
+  .cond td.mark{width:1%;white-space:nowrap}
+  .verdict{grid-column:1/-1;padding:8px 12px;border-radius:8px;background:var(--panel2);
+        border:1px solid var(--line);font-size:13px;white-space:normal}
+  .verdict.on{border-color:#4a3a1e}
+  .hl{grid-column:1/-1;font:11px var(--mono);color:var(--muted);display:flex;gap:8px;
+        align-items:center;white-space:normal}
+  .dadd{background:#1e4a33;border-radius:3px}
+  .ddel{background:#4a1e1e;text-decoration:line-through;border-radius:3px}
+  .ptable{width:100%;border-collapse:collapse;margin-top:6px;white-space:normal;
+        table-layout:fixed}
+  .ptable th,.ptable td{padding:3px 8px;border-bottom:1px solid #6a5228;text-align:left;
+        vertical-align:top;overflow-wrap:anywhere}
+  .ptable th:nth-child(1),.ptable td:nth-child(1){width:22%}
+  .ptable th:nth-child(2),.ptable td:nth-child(2){width:12%}
+  .ptable th{color:var(--warn);font-weight:600}
+  .composer .hint{flex-basis:100%;font:11px var(--mono)}
   code{font:11px var(--mono);background:var(--panel2);padding:1px 5px;border-radius:4px}
 
   /* narrow screens: these must sit after the base rules above */
@@ -117,6 +140,7 @@
            onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();send()}">
     <button class="primary" id="sendBtn" onclick="send()">Надіслати</button>
     <button id="cmpBtn" onclick="compare()" title="Той самий запит на clean і на профілі">clean vs профіль</button>
+    <div class="hint" id="composerHint"></div>
   </div>
 </div>
 
@@ -195,7 +219,7 @@
 
 <script>
 const $ = function(id){ return document.getElementById(id); };
-let sessionId = null, lastTrace = null;
+let sessionId = null, lastTrace = null, lastStep = 0, currentProfile = '—';
 let extraDefects = new Set(), profileDefects = new Set();
 
 let ALL_IDS = [];   // filled from /api/_test/defects
@@ -276,6 +300,7 @@ async function send(){
   try{
     const res = await api('/chat', jpost({message:text, session_id:sessionId}));
     sessionId = res.session_id;
+    lastStep = res.step_number;
     stopWaiting();
     thinking.textContent = '';
     renderRich(res.answer || '(порожня відповідь)', thinking);
@@ -292,10 +317,11 @@ async function send(){
       // returns it, so it belongs next to the token count rather than one
       // trace fetch away
       (res.elapsed_ms != null ? ' · ' + Math.round(res.elapsed_ms) + ' ms' : '') +
-      ' · '));
+      ' · промпт ' + res.prompt_version + ' · '));
     m.appendChild(a);
     thinking.appendChild(m);
     loadTrace(res.request_id);
+    renderComposerHint();
   }catch(e){
     stopWaiting();
     thinking.textContent = 'Помилка: ' + e.message;
@@ -304,6 +330,158 @@ async function send(){
     $('sendBtn').disabled = false;
     inp.focus();
   }
+}
+
+function turnsWord(n){
+  if(n % 10 === 1 && n % 100 !== 11) return 'хід';
+  if(n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) return 'ходи';
+  return 'ходів';
+}
+
+function renderComposerHint(){
+  const pins = Array.from(extraDefects);
+  const arm = currentProfile + (pins.length ? ' + ' + pins.join(',') : '');
+  const sendPart = sessionId
+    ? 'Надіслати — профіль ' + arm + ', сесія триває: позаду ' + lastStep + ' ' +
+      turnsWord(lastStep) + ', наступний буде кроком ' + (lastStep + 1)
+    : 'Надіслати — профіль ' + arm + ', нова сесія без історії';
+  const cmpPart = (currentProfile === 'clean' && !pins.length)
+    ? 'clean vs профіль — профіль зараз clean і дефектів не ввімкнено, обидві руки будуть однакові; оберіть профіль заняття праворуч'
+    : 'clean vs профіль — те саме питання на clean і на ' + arm + ', обидві руки з нової сесії';
+  $('composerHint').textContent = sendPart + '. ' + cmpPart + '.';
+  $('sendBtn').title = sendPart;
+  $('cmpBtn').title = cmpPart;
+}
+
+function fmtClock(iso){ return (iso || '—').slice(0, 16).replace('T', ' '); }
+
+function conditionRows(d){
+  const c = d.clean, p = d.profile;
+  const defectsOf = function(s){ return s.active_defects.length ? s.active_defects.join(', ') : 'немає'; };
+  const promptOf = function(s){ return (s.prompt_version || '—').replace(/\+/g, ' +'); };
+  const sessionOf = function(s){ return s.step_number === 1 ? 'нова, без історії чату' : 'крок ' + s.step_number; };
+  const retrievalOf = function(s){ return s.retrieval ? s.retrieval.index + ' / top_k ' + s.retrieval.top_k : '—'; };
+  return [
+    ['профіль', c.profile, p.profile],
+    ['дефекти', defectsOf(c), defectsOf(p)],
+    ['промпт', promptOf(c), promptOf(p)],
+    ['сесія', sessionOf(c), sessionOf(p)],
+    ['час стенду', fmtClock(c.clock), fmtClock(p.clock)],
+    ['індекс пошуку', retrievalOf(c), retrievalOf(p)],
+    ['модель', c.model || '—', p.model || '—'],
+  ];
+}
+
+function renderConditions(d){
+  const t = document.createElement('table');
+  t.className = 'cond';
+  const head = t.insertRow();
+  ['Умови прогону', 'clean', d.profile.profile, ''].forEach(function(h){
+    const th = document.createElement('th'); th.textContent = h; head.appendChild(th);
+  });
+  const differing = [];
+  conditionRows(d).forEach(function(row){
+    const tr = t.insertRow();
+    const same = row[1] === row[2];
+    if(!same){ tr.className = 'diffrow'; differing.push(row[0]); }
+    row.forEach(function(v){ tr.insertCell().textContent = v; });
+    const mark = tr.insertCell();
+    mark.className = 'mark';
+    mark.textContent = same ? '= однаково' : '≠ різниться';
+  });
+  return {table: t, differing: differing};
+}
+
+function verdictText(d, differing, textSame, toolDiffs){
+  const c = d.clean, p = d.profile;
+  let inputs;
+  if(!differing.length){
+    inputs = 'Умови обох рук однакові — профіль clean без дефектів, порівнювати нема з чим. Оберіть профіль заняття праворуч.';
+  }else{
+    inputs = 'У вході відрізняється: ' + differing.join(', ') + '; решта однакова.';
+    if(c.prompt_version === p.prompt_version && p.active_defects.length){
+      inputs += ' Промпт однаковий, тож ' + p.active_defects.join(', ') +
+        (p.active_defects.length > 1 ? ' сидять' : ' сидить') +
+        ' не в промпті — дивіться на інструменти і стан бази.';
+    }
+  }
+  let outputs;
+  if(toolDiffs == null) outputs = 'Результати інструментів звірити не вдалося.';
+  else if(textSame && !toolDiffs) outputs = 'Відповіді й результати інструментів однакові — цей запит дефект не зачіпає, спробуйте інший.';
+  else if(textSame) outputs = 'Текст відповіді однаковий, а результати інструментів розійшлися — дефект видно лише в payload.';
+  else if(!toolDiffs) outputs = 'Результати інструментів однакові, розійшовся лише текст — підсвічено нижче.';
+  else outputs = 'Розійшлися і текст, і результати інструментів.';
+  return inputs + ' ' + outputs;
+}
+
+function inlineTokens(text){
+  const re = /\*\*([^*]+)\*\*|`([^`]+)`/g;
+  const out = [];
+  const push = function(chunk, style){
+    chunk.split(/(\s+)/).forEach(function(t){ if(t) out.push({text: t, style: style}); });
+  };
+  let last = 0, m;
+  while((m = re.exec(text)) !== null){
+    if(m.index > last) push(text.slice(last, m.index), null);
+    if(m[1] !== undefined) push(m[1], 'strong'); else push(m[2], 'code');
+    last = re.lastIndex;
+  }
+  if(last < text.length) push(text.slice(last), null);
+  return out;
+}
+
+const DIFF_TOKEN_LIMIT = 400;
+
+function wordDiff(a, b){
+  const n = a.length, m = b.length;
+  if(n > DIFF_TOKEN_LIMIT || m > DIFF_TOKEN_LIMIT){
+    const words = function(ts){ return ts.filter(function(t){ return t.text.trim(); }).map(function(t){ return t.text; }).join(' '); };
+    return {left: a.map(function(t){ return {tok: t, op: 'same'}; }),
+            right: b.map(function(t){ return {tok: t, op: 'same'}; }),
+            skipped: true, changed: words(a) !== words(b)};
+  }
+  const dp = [];
+  for(let i = 0; i <= n; i++) dp.push(new Uint16Array(m + 1));
+  for(let i = n - 1; i >= 0; i--){
+    for(let j = m - 1; j >= 0; j--){
+      dp[i][j] = a[i].text === b[j].text
+        ? dp[i + 1][j + 1] + 1 : Math.max(dp[i + 1][j], dp[i][j + 1]);
+    }
+  }
+  const left = [], right = [];
+  let i = 0, j = 0, changed = false;
+  while(i < n && j < m){
+    if(a[i].text === b[j].text){
+      left.push({tok: a[i], op: 'same'}); right.push({tok: b[j], op: 'same'}); i++; j++;
+    }else if(dp[i + 1][j] >= dp[i][j + 1]){
+      left.push({tok: a[i], op: 'del'}); changed = changed || !!a[i].text.trim(); i++;
+    }else{
+      right.push({tok: b[j], op: 'add'}); changed = changed || !!b[j].text.trim(); j++;
+    }
+  }
+  while(i < n){ left.push({tok: a[i], op: 'del'}); changed = changed || !!a[i].text.trim(); i++; }
+  while(j < m){ right.push({tok: b[j], op: 'add'}); changed = changed || !!b[j].text.trim(); j++; }
+  return {left: left, right: right, skipped: false, changed: changed};
+}
+
+function renderMarked(marked, el, highlight){
+  el.textContent = '';
+  marked.forEach(function(m){
+    let node;
+    if(m.tok.style){
+      node = document.createElement(m.tok.style);
+      node.textContent = m.tok.text;
+    }else{
+      node = document.createTextNode(m.tok.text);
+    }
+    if(highlight && m.op !== 'same' && m.tok.text.trim()){
+      const w = document.createElement('span');
+      w.className = m.op === 'add' ? 'dadd' : 'ddel';
+      w.appendChild(node);
+      node = w;
+    }
+    el.appendChild(node);
+  });
 }
 
 async function compare(){
@@ -320,7 +498,27 @@ async function compare(){
   try{
     const d = await api('/api/_test/compare', jpost({message:text}));
     holder.textContent = '';
-    [['clean','clean'],['profile','dirty']].forEach(function(pair){
+    const cond = renderConditions(d);
+    holder.appendChild(cond.table);
+    const verdict = document.createElement('div');
+    verdict.className = 'verdict';
+    verdict.textContent = 'звіряю результати інструментів…';
+    holder.appendChild(verdict);
+
+    const diff = wordDiff(inlineTokens(d.clean.answer || '(порожньо)'),
+                          inlineTokens(d.profile.answer || '(порожньо)'));
+    const hl = document.createElement('label');
+    hl.className = 'hl';
+    const cb = document.createElement('input');
+    cb.type = 'checkbox'; cb.checked = !diff.skipped; cb.disabled = diff.skipped;
+    hl.appendChild(cb);
+    hl.appendChild(document.createTextNode(diff.skipped
+      ? 'підсвітка різниці вимкнена: відповідь довша за ' + DIFF_TOKEN_LIMIT + ' слів'
+      : 'підсвітити різницю у відповідях: закреслене є лише на clean, зелене — лише на профілі'));
+    holder.appendChild(hl);
+
+    const bodies = {};
+    [['clean', 'clean', 'left'], ['profile', 'dirty', 'right']].forEach(function(pair){
       const side = d[pair[0]];
       const col = document.createElement('div');
       col.className = 'col ' + pair[1];
@@ -328,7 +526,10 @@ async function compare(){
       h.textContent = side.profile +
         (side.active_defects.length ? ' · ' + side.active_defects.join(',') : ' · без дефектів');
       col.appendChild(h);
-      renderRich(side.answer || '(порожньо)', col);
+      const body = document.createElement('div');
+      renderMarked(diff[pair[2]], body, cb.checked);
+      bodies[pair[2]] = body;
+      col.appendChild(body);
       const m = document.createElement('div');
       m.className = 'meta';
       const a = document.createElement('a');
@@ -336,13 +537,23 @@ async function compare(){
       a.textContent = 'трейс ' + side.request_id.slice(0, 8);
       a.onclick = function(){ loadTrace(side.request_id); };
       m.appendChild(document.createTextNode(
-        'in ' + side.usage.input_tokens + ' / out ' + side.usage.output_tokens + ' tok · '));
+        'in ' + side.usage.input_tokens + ' / out ' + side.usage.output_tokens + ' tok' +
+        (side.elapsed_ms != null ? ' · ' + Math.round(side.elapsed_ms) + ' ms' : '') +
+        ' · промпт ' + side.prompt_version + ' · '));
       m.appendChild(a);
       col.appendChild(m);
       holder.appendChild(col);
     });
+    cb.onchange = function(){
+      renderMarked(diff.left, bodies.left, cb.checked);
+      renderMarked(diff.right, bodies.right, cb.checked);
+    };
     sessionId = null;   // compare runs in throwaway sessions
-    await showPayloadDiff(holder, d.clean.request_id, d.profile.request_id);
+    lastStep = 0;
+    renderComposerHint();
+    const toolDiffs = await showPayloadDiff(holder, d.clean.request_id, d.profile.request_id);
+    verdict.textContent = verdictText(d, cond.differing, !diff.changed, toolDiffs);
+    if(cond.differing.length && (diff.changed || toolDiffs)) verdict.classList.add('on');
   }catch(e){
     holder.textContent = 'Помилка: ' + e.message;
     holder.classList.add('err');
@@ -374,6 +585,19 @@ function flatten(v, prefix, into){
   return into;
 }
 
+const CELL_LIMIT = 160;
+
+function clip(v, limit){
+  v = String(v);
+  return v.length > limit ? v.slice(0, limit - 1) + '…' : v;
+}
+
+function toolLabel(key){
+  const name = key.split(' ')[0].slice(5);
+  const args = key.slice(key.indexOf(' ') + 1);
+  return name + (args === '{}' ? '()' : '(' + clip(args, 48) + ')');
+}
+
 // The headline lesson of this stand is that the prose can match while the
 // payload does not — and finding that meant loading each trace, hunting the
 // span and holding the first number in your head. The diff is computable from
@@ -386,42 +610,61 @@ async function showPayloadDiff(holder, cleanId, dirtyId){
   try{
     const a = toolIndex(await api('/api/_test/traces/' + cleanId));
     const b = toolIndex(await api('/api/_test/traces/' + dirtyId));
-    const lines = [];
+    const rows = [];
     Object.keys(b).forEach(function(key){
-      if(!(key in a)){ lines.push(key.split(' ')[0] + ': викликано лише на профілі'); return; }
+      if(!(key in a)){ rows.push([toolLabel(key), '—', 'не викликано', 'викликано']); return; }
       const fa = flatten(a[key], '', {}), fb = flatten(b[key], '', {});
       Object.keys(fb).forEach(function(f){
-        if(fa[f] !== fb[f]) lines.push(key.split(' ')[0] + ' → ' + f + ': ' + fa[f] + '  ≠  ' + fb[f]);
+        if(fa[f] !== fb[f]) rows.push([toolLabel(key), f, fa[f] === undefined ? '—' : fa[f], fb[f]]);
+      });
+      Object.keys(fa).forEach(function(f){
+        if(!(f in fb)) rows.push([toolLabel(key), f, fa[f], '—']);
       });
     });
     Object.keys(a).forEach(function(key){
-      if(!(key in b)) lines.push(key.split(' ')[0] + ': викликано лише на clean');
+      if(!(key in b)) rows.push([toolLabel(key), '—', 'викликано', 'не викликано']);
     });
     note.textContent = '';
     const h = document.createElement('strong');
-    h.textContent = lines.length
-      ? 'Результати інструментів розходяться (' + lines.length + '):'
+    h.textContent = rows.length
+      ? 'Результати інструментів розходяться (' + rows.length + '):'
       : 'Результати інструментів однакові — розбіжність, якщо є, лише в тексті.';
     note.appendChild(h);
-    lines.slice(0, 12).forEach(function(l){
-      const d = document.createElement('div');
-      d.textContent = l;
-      note.appendChild(d);
-    });
-    if(lines.length > 12){
-      const d = document.createElement('div');
-      d.textContent = '… ще ' + (lines.length - 12);
-      note.appendChild(d);
+    if(rows.length){
+      const t = document.createElement('table');
+      t.className = 'ptable';
+      const head = t.insertRow();
+      ['інструмент', 'поле', 'clean', 'профіль'].forEach(function(x){
+        const th = document.createElement('th'); th.textContent = x; head.appendChild(th);
+      });
+      rows.slice(0, 12).forEach(function(r){
+        const tr = t.insertRow();
+        r.forEach(function(v){
+          const td = tr.insertCell();
+          td.textContent = clip(v, CELL_LIMIT);
+          if(String(v).length > CELL_LIMIT) td.title = String(v);
+        });
+      });
+      note.appendChild(t);
+      if(rows.length > 12){
+        const d = document.createElement('div');
+        d.textContent = '… ще ' + (rows.length - 12);
+        note.appendChild(d);
+      }
     }
+    return rows.length;
   }catch(e){
     note.textContent = 'Не вдалося порівняти результати інструментів: ' + e.message;
+    return null;
   }
 }
 
 function newSession(){
   sessionId = null;
+  lastStep = 0;
   $('msgs').innerHTML = '';
   addMsg('Нова сесія — історія діалогу очищена', 'sys');
+  renderComposerHint();
 }
 
 async function loadTrace(id){
@@ -507,6 +750,7 @@ async function refreshState(){
         sum = results[3], ret = results[4];
   profileDefects = new Set(d.profile_defects);
   extraDefects = new Set(d.extra_defects);
+  currentProfile = d.profile;
   $('pProfile').textContent = 'profile: ' + d.profile;
   $('pDefects').textContent = d.active.length
     ? 'дефекти: ' + d.active.join(',') : 'дефектів немає';
@@ -539,6 +783,7 @@ async function refreshState(){
   pk.textContent = off.length ? off.join(' · ') : '';
   pk.style.display = off.length ? '' : 'none';
   pk.className = 'pill ' + (off.length ? 'on' : '');
+  renderComposerHint();
 }
 
 function renderDefects(d){
@@ -570,7 +815,9 @@ async function setProfile(){
   const p = $('profileSel').value;
   try{
     await api('/api/_test/profile', jput({profile: p}));
-    addMsg('Профіль перемкнено на ' + p, 'sys');
+    sessionId = null;
+    lastStep = 0;
+    addMsg('Профіль перемкнено на ' + p + ' — нова сесія, попередня історія агенту далі не передається', 'sys');
   }catch(e){ fail(e); }
   refreshState();
 }
