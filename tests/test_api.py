@@ -34,6 +34,35 @@ def test_chat_session_continuity():
     assert r2.json()["step_number"] == 2
 
 
+def test_chat_returns_the_prompt_version_it_ran_with():
+    r = client.post("/chat", json={"message": "Balance for CUS-0001?"})
+    assert r.json()["prompt_version"] == "base.v1"
+
+
+def test_compare_reports_the_conditions_of_each_arm():
+    from app.agent import prompt
+    client.put("/api/_test/profile", json={"profile": "lesson-04"})
+    try:
+        overlays = prompt.active_overlays()
+        r = client.post("/api/_test/compare",
+                        json={"message": "I am CUS-0001. What is the fee for a SWIFT transfer?"})
+        assert r.status_code == 200
+        clean, prof = r.json()["clean"], r.json()["profile"]
+        for arm in (clean, prof):
+            assert arm["step_number"] == 1
+            assert arm["clock"].startswith("2026-09-15")
+            assert arm["model"] == "mock-1"
+            assert arm["elapsed_ms"] is not None
+        assert clean["prompt_version"] == "base.v1"
+        assert clean["retrieval"] == {"index": "kb_clean", "top_k": 4}
+        assert prof["retrieval"] == {"index": "kb_broken", "top_k": 1}
+        assert overlays == ["D05"]
+        assert prof["prompt_version"] == "base.v1+D05"
+        assert prof["active_defects"] == ["D05", "D16", "D17"]
+    finally:
+        client.put("/api/_test/profile", json={"profile": None})
+
+
 def test_defects_endpoint_and_runtime_toggle():
     r = client.get("/api/_test/defects")
     assert r.json()["active"] == []
@@ -189,3 +218,31 @@ def test_ui_explains_a_hung_provider_instead_of_showing_a_dot():
     # cleared on both the success and the failure path, or the message would
     # overwrite a finished answer
     assert ui.count("stopWaiting()") >= 2
+
+
+def test_ui_explains_the_run_conditions_above_the_columns():
+    ui = _ui()
+    for needle in ("Умови прогону", "prompt_version", "step_number",
+                   "function renderConditions", "function verdictText"):
+        assert needle in ui, needle
+
+
+def test_ui_highlights_the_word_diff_without_innerhtml():
+    ui = _ui()
+    assert "function inlineTokens" in ui
+    assert "function wordDiff" in ui
+    body = ui.split("function inlineTokens")[1].split("function showPayloadDiff")[0]
+    assert "innerHTML" not in body
+
+
+def test_ui_starts_a_fresh_session_when_the_profile_changes():
+    ui = _ui()
+    body = ui.split("async function setProfile")[1].split("async function setClock")[0]
+    assert "sessionId = null" in body
+    assert body.index("await api('/api/_test/profile'") < body.index("sessionId = null")
+
+
+def test_ui_tells_what_each_send_button_does():
+    ui = _ui()
+    assert "function renderComposerHint" in ui
+    assert 'id="composerHint"' in ui

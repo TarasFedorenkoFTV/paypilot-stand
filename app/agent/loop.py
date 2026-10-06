@@ -110,6 +110,7 @@ def run_turn(session_id: str | None, user_message: str) -> dict:
     tree = trace.finish()
     return {"session_id": sid, "request_id": tree["request_id"],
             "answer": answer, "step_number": state["steps"],
+            "prompt_version": prompt_version,
             "elapsed_ms": tree.get("duration_ms"),
             "usage": {"input_tokens": total_in, "output_tokens": total_out}}
 
